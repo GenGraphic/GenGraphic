@@ -279,6 +279,7 @@
         margin-right: auto;
     }
     #firstInfo img {
+        width: 60%;
         display: block;
         float: none;
         margin-left: auto;
