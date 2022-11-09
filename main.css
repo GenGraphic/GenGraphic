@@ -1,264 +1,321 @@
-body {
-    background-color: rgba(75, 55, 154, 255);
+
+    body {
+        background-color: rgba(75, 55, 154, 255);
+        margin: 0;
+    }
+    main {
+        background-color: white;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: auto;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    }
+
+    /*Aici incepe styleingul pentru prima parte a paginii 
+    unde se afla header-ul, si titlul */
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+    #welcomePart {
+        background-image: url("images/welcomeScrenn.jpg");
+        background-color: rgba(165,82,197,255);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        color: white;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    #header {
+        width: 80%;
+        margin: auto;
+        position: relative;
+        height: 100px;
+    }
+    #header div {
+        float: left;
+        clear: none;
+    }
+    #pageName {
+        color: white;
+        text-decoration: none;
+        margin: 0;
+        font-size: 2rem;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    #menuIconDiv {
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        position: absolute;
+        right: 0px;
+    }
+    #title {
+        font-size: 5rem;
+        font-weight: 100;
+        margin-top: 0;
+    }
+    #slogan {
+        font-weight: 100;
+        margin-bottom: 0;
+    }
+    #titleCont {
+        padding-top: 5rem;
+    }
+    #contactBtn {
+        color: white;
+        background-color: transparent;
+        width: 200px;
+        height: 50px;
+        border-radius: 50px;
+        border: 1px solid white;
+    }
+    /*aici pot sa mai adaug animatie pentru schimbarea culorii*/
+    #contactBtn:hover {
+        background-image: linear-gradient(to left, rgba(169,84,199,255), rgba(50,38,162,255));
+        border: none;
+    }
+    /*Aici se termina styleingul pentru prima parte a paginii 
+    unde se afla header-ul, si titlul */
+
+
+
+    /*Aici incepe styleingul pentru partea 2 a paginii*/
+    #firstInfo {
+        overflow: hidden;
+    }
+    #titleInfo1 {
+        font-weight: 100;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    #textInfo1 {
+        color: #777777;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        line-height: 1.5em;
+        font-size: 14px;
+        float: left;
+    }
+    .imagesDecor {
+        width: 400px;
+        height: auto;
+    }
+    .textAreas {
+        width: 45%;
+        float: left;
+        padding: 5%;
+    }
+    #firstInfo img {
+        float: left;
+        padding: 5% 5% 5% 0;
+    }
+    /*Aici se termina styleingul pentru partea 2 a paginii*/
+
+
+    /*Aici incepe styleingul pentru partea 3 a paginii*/
+
+    #secondInfo{
+        overflow: hidden;
+        background-image: url('images/secondInfoImage.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #textArea2 {
+        float: right;
+        color: rgb(229, 229, 229);
+    }
+    #textArea2 h1 {
+        font-weight: 100;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    #textArea2 p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        line-height: 1.5em;
+        font-size: 14px;
+    }
+    /*Aici se termina styleingul pentru partea 3 a paginii*/
+
+    /*Aici incepe styleingul pentru partea 4 a paginii*/
+    #servicesPart {
+        overflow: hidden;
+    }
+    #containerUp {
+        width: 76%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #div1 {
+        background-image: url('images/order.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 45%;
+        height: 500px;
+        float: left;
+        border-radius: 20px;
+        margin: 20px;
+    }
+    #div2 {
+        background-image: url('images/deign.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 45%;
+        height: 500px;
+        float: right;
+        border-radius: 20px;
+        margin: 20px;
+
+    }
+    #containerDown {
+        width: 76%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+    }
+    #div3 {
+        background-image: url('images/programming.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 45%;
+        height: 500px;
+        float: left;
+        border-radius: 20px;
+        margin: 20px;
+
+    }
+    #div4 {
+        background-image: url('images/sever.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 45%;
+        height: 500px;
+        float: right;
+        border-radius: 20px;
+        margin: 20px;
+    }
+    .overlay {
+        background-image: linear-gradient(to left, rgba(169,84,199,0.9), rgba(50,38,162,0.9));
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        position: relative;
+    }
+    .overlay:hover {
+        animation-name: overlays;
+        animation-duration: 0.6s;
+        animation-fill-mode: forwards;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+    .overlay h1 {
     margin: 0;
-}
-main {
-    background-color: white;
-    margin-left: 5%;
-    margin-right: 5%;
-    height: auto;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
-}
-
-/*Aici incepe styleingul pentru prima parte a paginii 
-unde se afla header-ul, si titlul */
-.icon {
-    width: 30px;
-    height: 30px;
-}
-.logo {
-    width: 100px;
-    height: 100px;
-}
-#welcomePart {
-    background-image: url("images/welcomeScrenn.jpg");
-    background-color: rgba(165,82,197,255);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    color: white;
+    color: rgb(229, 229, 229); 
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-}
-#header {
-    width: 80%;
-    margin: auto;
-    position: relative;
-    height: 100px;
-}
-#header div {
-    float: left;
-    clear: none;
-}
-#pageName {
-    color: white;
-    text-decoration: none;
-    margin: 0;
-    font-size: 2rem;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-#menuIconDiv {
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    position: absolute;
-    right: 0px;
-}
-#title {
-    font-size: 5rem;
-    font-weight: 100;
-    margin-top: 0;
-}
-#slogan {
-    font-weight: 100;
-    margin-bottom: 0;
-}
-#titleCont {
-    padding-top: 5rem;
-}
-#contactBtn {
-    color: white;
-    background-color: transparent;
-    width: 200px;
-    height: 50px;
-    border-radius: 50px;
-    border: 1px solid white;
-}
-/*aici pot sa mai adaug animatie pentru schimbarea culorii*/
-#contactBtn:hover {
-    background-image: linear-gradient(to left, rgba(169,84,199,255), rgba(50,38,162,255));
-    border: none;
-}
-/*Aici se termina styleingul pentru prima parte a paginii 
-unde se afla header-ul, si titlul */
+    font-size: 2em;
+    }
+    .overlay p {
+        color: rgb(229, 229, 229);
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .overlay div {
+        position: absolute;
+    }
+    @keyframes overlays {
+        0%      {opacity: 0;}
+        100%    {opacity: 1;}
+    }
+    /*Aici se termina styleingul pentru partea 4 a paginii*/
 
+    /*Footer start*/
+    footer {
+        background-color: rgb(34,34,34,255);
+    }
+    footer img {
+        margin: 10px;
+    }
+    footer p {
+        text-align: center;
+        color: rgb(229, 229, 229);
+        margin: 0;
+    }
+    #socialMedia {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*Footer finish*/
 
-
-/*Aici incepe styleingul pentru partea 2 a paginii*/
-#firstInfo {
-    overflow: hidden;
+/*Make it responsive*/
+@media only screen and (max-width: 1170px) {
+    #div1, #div2, #div3, #div4 {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: 400px;
+    }
+    #firstInfo div {
+        width: 70%;
+        float: none;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #firstInfo img {
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5%;
+    }
 }
-#titleInfo1 {
-    font-weight: 100;
-    font-family: 'Courier New', Courier, monospace;
+@media only screen and (max-width: 590px) {
+    #title {
+        font-size: 3rem;
+    }
+    #div1, #div2, #div3, #div4 {
+        width: 95%;
+        height: 300px;
+    }
+    .overlay p {
+        font-size: 1em;
+    }
+    .overlay h1 {
+        font-size: 1.5em;
+    }
 }
-#textInfo1 {
-    color: #777777;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    line-height: 1.5em;
-    font-size: 14px;
-    float: left;
-}
-.imagesDecor {
-    width: 400px;
-    height: auto;
-}
-.textAreas {
-    width: 45%;
-    float: left;
-    padding: 5%;
-}
-#firstInfo img {
-    float: left;
-    padding: 5% 5% 5% 0;
-}
-/*Aici se termina styleingul pentru partea 2 a paginii*/
-
-
-/*Aici incepe styleingul pentru partea 3 a paginii*/
-
-#secondInfo{
-    overflow: hidden;
-    background-image: url('images/secondInfoImage.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-#textArea2 {
-    float: right;
-    color: rgb(229, 229, 229);
-}
-#textArea2 h1 {
-    font-weight: 100;
-    font-family: 'Courier New', Courier, monospace;
-}
-#textArea2 p {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    line-height: 1.5em;
-    font-size: 14px;
-}
-/*Aici se termina styleingul pentru partea 3 a paginii*/
-
-/*Aici incepe styleingul pentru partea 4 a paginii*/
-#servicesPart {
-    overflow: hidden;
-}
-#containerUp {
-    width: 76%;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-}
-#div1 {
-    background-image: url('images/order.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 500px;
-    height: 500px;
-    float: left;
-    border-radius: 20px;
-    margin: 20px;
-}
-#div2 {
-    background-image: url('images/deign.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 500px;
-    height: 500px;
-    float: right;
-    border-radius: 20px;
-    margin: 20px;
+@media only screen and (max-width: 495px) {
+    #pageName {
+        font-size: 1rem;
+        transform: none;
+        margin: auto;
+        top: 20%;
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+    #textArea2 {
+        width: 100%;
+        float: none;
+        padding: 5px;
+    }
 
 }
-#containerDown {
-    width: 76%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50px;
-    overflow: hidden;
-}
-#div3 {
-    background-image: url('images/programming.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 500px;
-    height: 500px;
-    float: left;
-    border-radius: 20px;
-    margin: 20px;
-
-}
-#div4 {
-    background-image: url('images/sever.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 500px;
-    height: 500px;
-    float: right;
-    border-radius: 20px;
-    margin: 20px;
-}
-.overlay {
-    background-image: linear-gradient(to left, rgba(169,84,199,0.9), rgba(50,38,162,0.9));
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    position: relative;
-}
-.overlay:hover {
-    animation-name: overlays;
-    animation-duration: 0.6s;
-    animation-fill-mode: forwards;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-}
-.overlay h1 {
-   margin: 0;
-   color: rgb(229, 229, 229); 
-   text-align: center;
-}
-.overlay p {
-    color: rgb(229, 229, 229);
-    text-align: center;
-    font-size: 20px;
-}
-.overlay div {
-    position: absolute;
-    bottom: 50%;
-}
-@keyframes overlays {
-    0%      {opacity: 0;}
-    100%    {opacity: 1;}
-}
-/*Aici se termina styleingul pentru partea 4 a paginii*/
-
-/*Footer start*/
-footer {
-    background-color: rgb(34,34,34,255);
-}
-footer img {
-    margin: 10px;
-}
-footer p {
-    text-align: center;
-    color: rgb(229, 229, 229);
-    margin: 0;
-}
-#socialMedia {
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-/*Footer finish*/
