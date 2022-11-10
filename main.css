@@ -38,6 +38,12 @@
         position: relative;
         height: 100px;
     }
+    .links {
+        color: white;
+        text-decoration: none;
+        margin: 20px;
+        font-size: 1.5rem;
+    }
     #header div {
         float: left;
         clear: none;
@@ -53,11 +59,12 @@
         transform: translateY(-50%);
     }
     #menuIconDiv {
+        position: absolute;
+        right: 0px;
+        margin: 0;
         top: 50%;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-        position: absolute;
-        right: 0px;
     }
     #title {
         font-size: 5rem;
@@ -92,6 +99,9 @@
     /*Aici incepe styleingul pentru partea 2 a paginii*/
     #firstInfo {
         overflow: hidden;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
     }
     #titleInfo1 {
         font-weight: 100;
