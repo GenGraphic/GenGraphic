@@ -86,7 +86,9 @@
         border-radius: 50px;
         border: 1px solid white;
     }
+
     /*aici pot sa mai adaug animatie pentru schimbarea culorii*/
+
     #contactBtn:hover {
         background-image: linear-gradient(to left, rgba(169,84,199,255), rgba(50,38,162,255));
         border: none;

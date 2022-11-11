@@ -1,0 +1,190 @@
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    background-color: rgba(75, 55, 154, 255);
+    margin: 0;
+}
+main {
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+
+/*Aici incepe styleingul pentru prima parte a paginii 
+    unde se afla header-ul, si titlul */
+.icon {
+    width: 30px;
+    height: 30px;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+}
+#welcomePart {
+    background-image: linear-gradient(to left, rgba(169,84,199,255), rgba(50,38,162,255));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#header {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    height: 100px;
+}
+.links {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 1.5rem;
+}
+#header div {
+    float: left;
+    clear: none;
+}
+#pageName {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#menuIconDiv {
+    position: absolute;
+    right: 0px;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#title {
+    font-size: 5rem;
+    font-weight: 100;
+    margin-top: 0;
+}
+#slogan {
+    font-weight: 100;
+    margin-bottom: 0;
+}
+#titleCont {
+    padding-top: 5rem;
+}
+#contactBtn {
+    color: white;
+    background-color: transparent;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+ /*aici pot sa mai adaug animatie pentru schimbarea culorii*/
+
+ #contactBtn:hover {
+    background-image: linear-gradient(to left, rgba(169,84,199,255), rgba(50,38,162,255));
+    border: none;
+}
+/*Aici se termina styleingul pentru prima parte a paginii 
+unde se afla header-ul, si titlul */
+
+/*Aici incepe styleingul pentru partea 2 a paginii*/
+
+#secondInfo{
+    overflow: hidden;
+    background-image: url('../../images/secondInfoImage.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+}
+#textArea2 {
+    float: right;
+    color: rgb(229, 229, 229);
+}
+#textArea2 h1 {
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+}
+#textArea2 p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+    font-size: 14px;
+}
+.textAreas {
+    width: 45%;
+    float: left;
+    padding: 5%;
+}
+/*Aici se termina styleingul pentru partea 2 a paginii*/
+
+/*Aici incepe style pentru membrii echipei*/
+.images {
+    width: 100%;
+    height: auto;
+}
+#ourTeam div {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+#titleDev {grid-area: title;}
+#imageDev {grid-area: image;}
+#textDev {grid-area: description;}
+#aboutDev {
+    display: grid;
+    column-gap: 10px;
+    grid-template-areas: 
+    'title title title title'
+    'image description description description';
+}
+#aboutDev h1 {
+    font-weight: 100;
+}
+
+#titleDesigner {grid-area: titleDes;}
+#imageDesigner {grid-area: imageDes;}
+#textDesigner {grid-area: descriptionDes;}
+#aboutDesigner {
+    display: grid;
+    column-gap: 10px;
+    grid-template-areas: 
+    'titleDes titleDes titleDes imageDes'
+    'descriptionDes descriptionDes descriptionDes imageDes';
+}
+#aboutDesigner h1 {
+    font-weight: 100;
+}
+
+/*Aici se incheie style pentru membrii echipei*/
+
+/*Footer start*/
+footer {
+    background-color: rgb(34,34,34,255);
+}
+footer img {
+    margin: 10px;
+}
+footer p {
+    text-align: center;
+    color: rgb(229, 229, 229);
+    margin: 0;
+}
+#socialMedia {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Footer finish*/
