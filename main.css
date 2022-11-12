@@ -65,6 +65,8 @@
         top: 50%;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
+        height:fit-content;
+        width: fit-content;
     }
     #menuOptions {
         display: none;
@@ -303,6 +305,23 @@
         margin-left: auto;
         margin-right: auto;
         padding: 5%;
+    }
+}
+@media only screen and (max-width: 1000px){
+    #menuOptions {
+        position: absolute;
+        right: 0px;
+        top: 50px;
+    }
+    #menuOptions a {
+        text-align: right;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 5px;
+        padding: 5px;
+        border: 1px solid white;
+        border-radius: 20px;
     }
 }
 @media only screen and (max-width: 590px) {

@@ -1,0 +1,160 @@
+body {
+    background-color: rgba(75, 55, 154, 255);
+    margin: 0;
+}
+main {
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/*Aici incepe styleingul pentru prima parte a paginii 
+    unde se afla header-ul, si titlul */
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+    #welcomePart {
+        background-image: linear-gradient(to left, rgba(169,84,199,255), rgba(50,38,162,255));        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        color: white;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    #header {
+        width: 80%;
+        margin: auto;
+        position: relative;
+        height: 100px;
+    }
+    .links {
+        color: white;
+        text-decoration: none;
+        margin: 20px;
+        font-size: 1.5rem;
+    }
+    #header div {
+        float: left;
+        clear: none;
+    }
+    #pageName {
+        color: white;
+        text-decoration: none;
+        margin: 0;
+        font-size: 2rem;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    #menuIconDiv {
+        position: absolute;
+        right: 0px;
+        margin: 0;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        height:fit-content;
+        width: fit-content;
+    }
+    #menuOptions {
+        display: none;
+    }
+    #menuIcon:hover {
+        cursor: pointer;
+    }
+    #title {
+        font-size: 5rem;
+        font-weight: 100;
+        margin-top: 0;
+    }
+    #slogan {
+        font-weight: 100;
+        margin-bottom: 0;
+    }
+    #titleCont {
+        padding-top: 5rem;
+    }
+    /*aici pot sa mai adaug animatie pentru schimbarea culorii*/
+
+    #contactBtn:hover {
+        background-image: linear-gradient(to left, rgba(169,84,199,255), rgba(50,38,162,255));
+        border: none;
+    }
+    /*Aici se termina styleingul pentru prima parte a paginii 
+    unde se afla header-ul, si titlul */
+
+    /*Aici incepe designul pentru datele de contact*/
+    #datenContainer * {
+        border-bottom: 1px solid black;
+    }
+
+    #phoneTxt {grid-area: phoneTxt;}
+    #emailTxt {grid-area: emailTxt;}
+    #facebookTxt {grid-area: facebookTxt;}
+    #fiverTxt {grid-area: fiverTxt;}
+    #upworkTxt {grid-area: upworkTxt;}
+    #linkedinTxt {grid-area: linkedinTxt;}
+    #gitTxt {grid-area: gitTxt;}
+
+    #phone {grid-area: phone;}
+    #email {grid-area: email;}
+    #facebook {grid-area: facebook;}
+    #fiver {grid-area: fiver;}
+    #upwork {grid-area: upwork;}
+    #linkedin {grid-area: linkedin;}
+    #git {grid-area: git;}
+
+    #datenContainer {
+        background-image: linear-gradient(to left, rgba(169,84,199,255), rgba(50,38,162,255));
+        border-radius: 20px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        color: white;
+        width: 70%;
+        display: grid;
+        grid-template-areas: 
+        'phoneTxt phone'
+        'emailTxt email'
+        'facebookTxt facebook'
+        'fiverTxt fiver'
+        'upworkTxt upwork'
+        'linkedinTxt linkedin'
+        'gitTxt git';
+    }
+    #datenContainer a {
+        color: white;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    /*Aici se incheie designul pentru datele de contact*/
+
+
+    /*Footer start*/
+    footer {
+        background-color: rgb(34,34,34,255);
+    }
+    footer img {
+        margin: 10px;
+    }
+    footer p {
+        text-align: center;
+        color: rgb(229, 229, 229);
+        margin: 0;
+    }
+    #socialMedia {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*Footer finish*/

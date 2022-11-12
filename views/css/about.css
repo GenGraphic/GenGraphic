@@ -68,6 +68,12 @@ main {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+#menuOptions {
+    display: none;
+}
+#menuIcon:hover {
+    cursor: pointer;
+}
 #title {
     font-size: 5rem;
     font-weight: 100;
@@ -142,7 +148,10 @@ unde se afla header-ul, si titlul */
 }
 #titleDev {grid-area: title;}
 #imageDev {grid-area: image;}
-#textDev {grid-area: description;}
+#textDev {
+    grid-area: description;
+    text-align: justify;
+}
 #aboutDev {
     display: grid;
     column-gap: 10px;
@@ -161,7 +170,7 @@ unde se afla header-ul, si titlul */
     display: grid;
     column-gap: 10px;
     grid-template-areas: 
-    'titleDes titleDes titleDes imageDes'
+    'titleDes titleDes titleDes titleDes'
     'descriptionDes descriptionDes descriptionDes imageDes';
 }
 #aboutDesigner h1 {
@@ -188,3 +197,79 @@ footer p {
     margin-right: auto;
 }
 /*Footer finish*/
+
+/*make it resopnsive*/
+@media only screen and (max-width: 1000px){
+    #menuOptions {
+        position: absolute;
+        right: 0px;
+        top: 50px;
+    }
+    #menuOptions a {
+        text-align: right;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 5px;
+        padding: 5px;
+        border: 1px solid white;
+        border-radius: 20px;
+    }
+}
+@media only screen and (max-width: 1300px){
+    #aboutDev {
+        background-image: url('../../images/developer.jpg'); /*Cauta alata poza aici*/
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        grid-template-areas: 
+        'title title'
+        'description description'
+    }
+    #ourTeam div img {
+        display: none;
+    }
+    #ourTeam div {
+        width: 100%;
+        margin: 0;
+    }
+    #ourTeam div p {
+        padding: 10px;
+    }
+
+    #aboutDesigner {
+        background-image: url('../../images/designer.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: black;
+        grid-template-areas: 
+        'titleDes titleDes'
+        'descriptionDes descriptionDes';
+
+    }
+}
+@media only screen and (max-width: 590px) {
+    #title {
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width: 495px) {
+    #pageName {
+        font-size: 1rem;
+        transform: none;
+        margin: auto;
+        top: 20%;
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+    #textArea2 {
+        width: 100%;
+        float: none;
+        padding: 5px;
+    }
+
+}

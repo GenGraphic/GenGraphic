@@ -1,10 +1,13 @@
+//const obj for the footer media links
 const facebookLink = document.getElementById('facebookLink');
 const linkedin = document.getElementById('linkedinLink');
 const upworkLink = document.getElementById('upworkLink');
+//const for the menu
 const menuIcon = document.getElementById('menuIcon');
 const menuOptions = document.getElementById('menuOptions');
+var menuToggle = false;
 
-//making buttons fot footer
+//making buttons for footer
 facebookLink.addEventListener('click', () => {
     location.href = 'https://www.facebook.com/profile.php?id=100087527200353';
 });
@@ -16,15 +19,15 @@ upworkLink.addEventListener('click', () => {
 });
 
 //making button for menu
-menuIcon.addEventListener('click', () => {
-    if (menuOptions.style.display = 'none')
+menuIcon.addEventListener('click', () => { 
+    if (!menuToggle)
     {
         menuOptions.style.display = 'block';
         menuIcon.src = 'images/exit.png';
-        console.log('display');
-    }else if(menuIcon.src = 'images/exit.png') {
+        menuToggle = true;
+    }else if(menuToggle) {
         menuOptions.style.display = 'none';
         menuIcon.src = 'images/menuIcon.png';
-        console.log('hide');
+        menuToggle = false;
     }
 });
