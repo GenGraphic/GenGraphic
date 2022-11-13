@@ -1,3 +1,11 @@
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+p {
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+}
 body {
     background-color: rgba(75, 55, 154, 255);
     margin: 0;
@@ -95,7 +103,11 @@ main {
     unde se afla header-ul, si titlul */
 
     /*Aici incepe designul pentru datele de contact*/
-    
+    #contactDaten h1 {
+        text-align: center; 
+        margin-top: 0;
+        font-weight: 100;
+    }
     #datenContainer * {
         border-bottom: 1px solid black;
     }
@@ -143,20 +155,22 @@ main {
     /*Aici incep sa fac style pentru google map*/
     #adressDiv p {
         color: white;
+        font-size: 18px;
     }
     #adressDiv {
         grid-area: adresses;
-        margin-top: auto;
-        margin-bottom: auto;
-        padding: 20px;
+        margin: auto;
     }
     #map {
         grid-area: map;
         width: 100%;
         height:auto;
     }
-    #googleMap {
+    #googleMap h1 {
         grid-area: titleMap;
+        text-align: center; 
+        color:white;
+        font-weight: 100;
     }
     #googleMap {
         background-image: url('../../images/map.jpg');
@@ -175,6 +189,10 @@ main {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
+    }
+    #sendEmail h1 {
+        font-weight: 100;
+        text-align: center;
     }
     #emailInput {
         grid-area: email;

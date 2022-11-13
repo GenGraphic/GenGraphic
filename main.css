@@ -1,4 +1,7 @@
 
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
     body {
         background-color: rgba(75, 55, 154, 255);
         margin: 0;

@@ -9,13 +9,13 @@ var menuToggle = false;
 
 //making icons of social media in footer clickeble
 facebookLink.addEventListener('click', () => {
-    location.href = 'https://www.facebook.com/profile.php?id=100087527200353';
+    window.open('https://www.facebook.com/profile.php?id=100087527200353', '_blank').focus();
 });
 linkedin.addEventListener('click', () => {
-    location.href = 'https://www.linkedin.com/in/gen-graphic-b10152256/';
+    window.open('https://www.linkedin.com/in/gen-graphic-b10152256/', '_blank').focus();
 });
 upworkLink.addEventListener('click', () => {
-    location.href = 'https://www.upwork.com/freelancers/~017e3bb98e715de75a';
+    window.open('https://www.upwork.com/freelancers/~017e3bb98e715de75a', '_blank').focus();
 });
 
 //making button for menu
