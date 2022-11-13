@@ -126,7 +126,7 @@ unde se afla header-ul, si titlul */
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     line-height: 1.5em;
-    font-size: 14px;
+    font-size: 18px;
 }
 .textAreas {
     width: 45%;
@@ -151,6 +151,7 @@ unde se afla header-ul, si titlul */
 #textDev {
     grid-area: description;
     text-align: justify;
+    font-size: 18px;
 }
 #aboutDev {
     display: grid;
@@ -165,7 +166,10 @@ unde se afla header-ul, si titlul */
 
 #titleDesigner {grid-area: titleDes;}
 #imageDesigner {grid-area: imageDes;}
-#textDesigner {grid-area: descriptionDes;}
+#textDesigner {
+    grid-area: descriptionDes;
+    font-size: 18px;
+}
 #aboutDesigner {
     display: grid;
     column-gap: 10px;

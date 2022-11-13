@@ -122,7 +122,7 @@
         font-family: "Poppins", sans-serif;
         font-weight: 300;
         line-height: 1.5em;
-        font-size: 14px;
+        font-size: 18px;
         float: left;
     }
     .imagesDecor {
@@ -163,7 +163,7 @@
         font-family: "Poppins", sans-serif;
         font-weight: 300;
         line-height: 1.5em;
-        font-size: 14px;
+        font-size: 18px;
     }
     /*Aici se termina styleingul pentru partea 3 a paginii*/
 
@@ -256,6 +256,10 @@
     }
     .overlay div {
         position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        
     }
     @keyframes overlays {
         0%      {opacity: 0;}
