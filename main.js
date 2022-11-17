@@ -22,12 +22,17 @@ upworkLink.addEventListener('click', () => {
 menuIcon.addEventListener('click', () => { 
     if (!menuToggle)
     {
-        menuOptions.style.display = 'block';
+        menuOptions.style.opacity = '1';
         menuIcon.src = 'images/exit.png';
         menuToggle = true;
     }else if(menuToggle) {
-        menuOptions.style.display = 'none';
+        menuOptions.style.opacity = '0';
         menuIcon.src = 'images/menuIcon.png';
         menuToggle = false;
     }
+});
+
+//button for contact us
+document.getElementById('contactBtn').addEventListener('click', () => {
+    location.href = 'views/contact.html';
 });

@@ -7,102 +7,116 @@ body {
     margin: 0;
 }
 main {
+    width: 90%;
     background-color: white;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
     height: auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
 }
 
 /*Aici incepe styleingul pentru prima parte a paginii 
     unde se afla header-ul, si titlul */
-.icon {
-    width: 30px;
-    height: 30px;
-}
-.logo {
-    width: 100px;
-    height: 100px;
-}
-#welcomePart {
-    background-image: linear-gradient(to left, rgba(169,84,199,255), rgba(50,38,162,255));
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    color: white;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-}
-#header {
-    width: 80%;
-    margin: auto;
-    position: relative;
-    height: 100px;
-}
-.links {
-    color: white;
-    text-decoration: none;
-    margin: 20px;
-    font-size: 1.5rem;
-}
-#header div {
-    float: left;
-    clear: none;
-}
-#pageName {
-    color: white;
-    text-decoration: none;
-    margin: 0;
-    font-size: 2rem;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-#menuIconDiv {
-    position: absolute;
-    right: 0px;
-    margin: 0;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-#menuOptions {
-    display: none;
-}
-#menuIcon:hover {
-    cursor: pointer;
-}
-#title {
-    font-size: 5rem;
-    font-weight: 100;
-    margin-top: 0;
-}
-#slogan {
-    font-weight: 100;
-    margin-bottom: 0;
-}
-#titleCont {
-    padding-top: 5rem;
-}
-#contactBtn {
-    color: white;
-    background-color: transparent;
-    width: 200px;
-    height: 50px;
-    border-radius: 50px;
-    border: 1px solid white;
-}
- /*aici pot sa mai adaug animatie pentru schimbarea culorii*/
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+    #welcomePart {
+        background-image: url("../../images/welcomeScrenn.jpg");
+        background-color: rgba(165,82,197,255);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        width: 100%;
+    }
+    #header {
+        display: grid;
+        grid-auto-flow: column;
+    }
+    .links {
+        color: white;
+        text-decoration: none;
+        margin: 20px;
+        font-size: 1.5rem;
+    }
+    #logoDiv {
+        width: 100%;
+        margin: 30px;
+        display: table;
+        border-collapse: collapse;
+    }
+    #pageName {
+        color: white;
+        text-decoration: none;
+        font-size: 2rem;
+        display: table-cell;
+        vertical-align: middle;
+        width: 99%;
+    }
+    #menuIconDiv {
+        display: table;
+        text-align: right;
+        margin: 60px;
+    }
+    .sticky {
+        width: 90%;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        background-color: rgba(50,38,162,255);
+        opacity: 0.9;
+    }
+    #menuOptions {
+        opacity: 0;
+        float: left;
+        width: 90%;
+    }
+    
+    #menuIcon {
+        vertical-align: middle;
+    }
+    #menuIcon:hover {
+        cursor: pointer;
+    }
+    #title {
+        font-size: 5rem;
+        font-weight: 100;
+        margin-top: 0;
+    }
+    #slogan {
+        font-weight: 100;
+        margin-bottom: 0;
+    }
+    #titleCont {
+        padding-top: 5rem;
+        text-align: center;
+    }
+    #contactBtn {
+        color: white;
+        background-color: transparent;
+        width: 200px;
+        height: 50px;
+        border-radius: 50px;
+        border: 1px solid white;
+    }
 
- #contactBtn:hover {
-    background-image: linear-gradient(to left, rgba(169,84,199,255), rgba(50,38,162,255));
-    border: none;
-}
-/*Aici se termina styleingul pentru prima parte a paginii 
-unde se afla header-ul, si titlul */
+    /*aici pot sa mai adaug animatie pentru schimbarea culorii*/
 
+    #contactBtn:hover {
+        background-image: linear-gradient(to left, rgba(169,84,199,255), rgba(50,38,162,255));
+        border: none;
+    }
+    /*Aici se termina styleingul pentru prima parte a paginii 
+    unde se afla header-ul, si titlul */
+
+    
 /*Aici incepe styleingul pentru partea 2 a paginii*/
 
 #secondInfo{
@@ -203,21 +217,22 @@ footer p {
 /*Footer finish*/
 
 /*make it resopnsive*/
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 895px) {
     #menuOptions {
-        position: absolute;
-        right: 0px;
-        top: 50px;
+        position:absolute;
+        width: 30%;
+        right: 5%;
+        display: grid;
+        top: 100px;
     }
     #menuOptions a {
-        text-align: right;
-        display: inline-block;
-        overflow: hidden;
-        white-space: nowrap;
-        margin: 5px;
-        padding: 5px;
+        float: none;
+        margin: 0;
+        padding: 10px;
+        text-align: center;
         border: 1px solid white;
         border-radius: 20px;
+        font-size: 1.5rem;
     }
 }
 @media only screen and (max-width: 1300px){

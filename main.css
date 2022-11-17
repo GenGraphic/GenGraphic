@@ -7,9 +7,10 @@
         margin: 0;
     }
     main {
+        width: 90%;
         background-color: white;
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: auto;
+        margin-right: auto;
         height: auto;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
     }
@@ -21,8 +22,8 @@
         height: 30px;
     }
     .logo {
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
     }
     #welcomePart {
         background-image: url("images/welcomeScrenn.jpg");
@@ -32,14 +33,12 @@
         background-position: center;
         height: 500px;
         color: white;
-        text-align: center;
         font-family: 'Courier New', Courier, monospace;
+        width: 100%;
     }
     #header {
-        width: 80%;
-        margin: auto;
-        position: relative;
-        height: 100px;
+        display: grid;
+        grid-auto-flow: column;
     }
     .links {
         color: white;
@@ -47,32 +46,41 @@
         margin: 20px;
         font-size: 1.5rem;
     }
-    #header div {
-        float: left;
-        clear: none;
+    #logoDiv {
+        width: 100%;
+        margin: 30px;
+        display: table;
+        border-collapse: collapse;
     }
     #pageName {
         color: white;
         text-decoration: none;
-        margin: 0;
         font-size: 2rem;
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+        display: table-cell;
+        vertical-align: middle;
+        width: 99%;
     }
     #menuIconDiv {
-        position: absolute;
-        right: 0px;
-        margin: 0;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        height:fit-content;
-        width: fit-content;
+        display: table;
+        text-align: right;
+        margin: 60px;
+    }
+    .sticky {
+        width: 90%;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        background-color: rgba(50,38,162,255);
+        opacity: 0.9;
     }
     #menuOptions {
-        display: none;
+        opacity: 0;
+        float: left;
+        width: 90%;
+    }
+    
+    #menuIcon {
+        vertical-align: middle;
     }
     #menuIcon:hover {
         cursor: pointer;
@@ -88,6 +96,7 @@
     }
     #titleCont {
         padding-top: 5rem;
+        text-align: center;
     }
     #contactBtn {
         color: white;
@@ -233,19 +242,12 @@
     }
     .overlay {
         background-image: linear-gradient(to left, rgba(169,84,199,0.9), rgba(50,38,162,0.9));
-        opacity: 0;
         width: 100%;
         height: 100%;
         border-radius: 20px;
         position: relative;
     }
-    .overlay:hover {
-        animation-name: overlays;
-        animation-duration: 0.6s;
-        animation-fill-mode: forwards;
-        -webkit-animation-timing-function: linear;
-        animation-timing-function: linear;
-    }
+    
     .overlay h1 {
     margin: 0;
     color: rgb(229, 229, 229); 
@@ -264,10 +266,7 @@
         transform: translateY(-50%);
         
     }
-    @keyframes overlays {
-        0%      {opacity: 0;}
-        100%    {opacity: 1;}
-    }
+    
     /*Aici se termina styleingul pentru partea 4 a paginii*/
 
     /*Footer start*/
@@ -313,22 +312,24 @@
         margin-right: auto;
         padding: 5%;
     }
+    
 }
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 895px) {
     #menuOptions {
-        position: absolute;
-        right: 0px;
-        top: 50px;
+        position:absolute;
+        width: 30%;
+        right: 5%;
+        display: grid;
+        top: 100px;
     }
     #menuOptions a {
-        text-align: right;
-        display: inline-block;
-        overflow: hidden;
-        white-space: nowrap;
-        margin: 5px;
-        padding: 5px;
+        float: none;
+        margin: 0;
+        padding: 10px;
+        text-align: center;
         border: 1px solid white;
         border-radius: 20px;
+        font-size: 1.5rem;
     }
 }
 @media only screen and (max-width: 590px) {
@@ -356,9 +357,9 @@
 @media only screen and (max-width: 495px) {
     #pageName {
         font-size: 1rem;
-        transform: none;
-        margin: auto;
-        top: 20%;
+    }
+    #menuOptions {
+        width: 35%;
     }
     .logo {
         width: 50px;

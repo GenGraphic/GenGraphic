@@ -25,25 +25,23 @@ main {
         height: 30px;
     }
     .logo {
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
     }
     #welcomePart {
-        background-color: rgba(169,84,199,255);
-        background-image: url('../../images/compass.jpg');
+        background-image: url("../../images/welcomeScrenn.jpg");
+        background-color: rgba(165,82,197,255);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         height: 500px;
         color: white;
-        text-align: center;
         font-family: 'Courier New', Courier, monospace;
+        width: 100%;
     }
     #header {
-        width: 80%;
-        margin: auto;
-        position: relative;
-        height: 100px;
+        display: grid;
+        grid-auto-flow: column;
     }
     .links {
         color: white;
@@ -51,32 +49,41 @@ main {
         margin: 20px;
         font-size: 1.5rem;
     }
-    #header div {
-        float: left;
-        clear: none;
+    #logoDiv {
+        width: 100%;
+        margin: 30px;
+        display: table;
+        border-collapse: collapse;
     }
     #pageName {
         color: white;
         text-decoration: none;
-        margin: 0;
         font-size: 2rem;
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+        display: table-cell;
+        vertical-align: middle;
+        width: 99%;
     }
     #menuIconDiv {
-        position: absolute;
-        right: 0px;
-        margin: 0;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        height:fit-content;
-        width: fit-content;
+        display: table;
+        text-align: right;
+        margin: 60px;
+    }
+    .sticky {
+        width: 90%;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        background-color: rgba(50,38,162,255);
+        opacity: 0.9;
     }
     #menuOptions {
-        display: none;
+        opacity: 0;
+        float: left;
+        width: 90%;
+    }
+    
+    #menuIcon {
+        vertical-align: middle;
     }
     #menuIcon:hover {
         cursor: pointer;
@@ -92,7 +99,17 @@ main {
     }
     #titleCont {
         padding-top: 5rem;
+        text-align: center;
     }
+    #contactBtn {
+        color: white;
+        background-color: transparent;
+        width: 200px;
+        height: 50px;
+        border-radius: 50px;
+        border: 1px solid white;
+    }
+
     /*aici pot sa mai adaug animatie pentru schimbarea culorii*/
 
     #contactBtn:hover {
@@ -258,3 +275,63 @@ main {
         margin-right: auto;
     }
     /*Footer finish*/
+
+    @media only screen and (max-width: 950px) {
+        #datenContainer {
+            width: 90%;
+        }
+        #title {
+            font-size: 4rem;
+        }
+    }
+    @media only screen and (max-width: 895px) {
+        #menuOptions {
+            position:absolute;
+            width: 30%;
+            right: 5%;
+            display: grid;
+            top: 100px;
+        }
+        #menuOptions a {
+            float: none;
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid white;
+            border-radius: 20px;
+            font-size: 1.5rem;
+        }
+        #title {
+            font-size: 3rem;
+        }
+    }
+    @media only screen and (max-width: 750px) {
+        #datenContainer {
+            width: 100%;
+            font-size: 0.5rem;
+        }
+        #sendEmail {
+            width: 100%;
+        }
+        #title {
+            font-size: 2rem;
+        }
+    }
+    @media only screen and (max-width: 500px) {
+        #googleMap {
+            grid-template-areas: 
+            'titleMap titleMap'
+            'adresses adresses'
+            'map map';
+        }
+        #emailForm {
+            grid-template-areas: 
+            'email'
+            'name'
+            'message'
+            'sendBtn';
+        }
+        #menuIconDiv {
+            margin: 30px;
+        }
+    }
