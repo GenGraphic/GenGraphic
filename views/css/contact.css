@@ -126,7 +126,10 @@ main {
         font-weight: 100;
     }
     #datenContainer * {
-        border-bottom: 1px solid black;
+        background-color: rgba(165,82,197,255);
+        height: 30px;
+        margin: 0 0 10px 0;
+        color: white;
     }
 
     #phoneTxt {grid-area: phoneTxt;}
@@ -162,10 +165,12 @@ main {
         'linkedinTxt linkedin'
         'gitTxt git';
     }
+    #datenContainer p {
+        border-radius: 20px 0 0 20px;
+    }
     #datenContainer a {
-        color: black;
-        margin-top: auto;
-        margin-bottom: auto;
+        text-decoration: none;
+        border-radius: 0 20px 20px 0;
     }
     /*Aici se incheie designul pentru datele de contact*/
 
