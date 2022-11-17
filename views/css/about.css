@@ -151,8 +151,9 @@ main {
 
 /*Aici incepe style pentru membrii echipei*/
 .images {
-    width: 100%;
+    width: 90%;
     height: auto;
+    border-radius: 50%;
 }
 #ourTeam div {
     width: 80%;
@@ -183,6 +184,8 @@ main {
 #textDesigner {
     grid-area: descriptionDes;
     font-size: 18px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 #aboutDesigner {
     display: grid;
