@@ -240,36 +240,34 @@ footer p {
 }
 @media only screen and (max-width: 1300px){
     #aboutDev {
-        background-image: url('../../images/developer.jpg'); /*Cauta alata poza aici*/
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: white;
+        justify-items: center;
         grid-template-areas: 
-        'title title'
-        'description description'
+        'title'
+        'description'
+        'image';
     }
-    #ourTeam div img {
-        display: none;
+    #aboutDev img {
+        width: auto;
+        height: 200px;
     }
     #ourTeam div {
         width: 100%;
         margin: 0;
     }
     #ourTeam div p {
-        padding: 10px;
+        padding: 20px;
+        font-weight: 300;
     }
-
+    #aboutDesigner img {
+        width: auto;
+        height: 200px;
+    }
     #aboutDesigner {
-        background-image: url('../../images/designer.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: black;
+        justify-items: center;
         grid-template-areas: 
-        'titleDes titleDes'
-        'descriptionDes descriptionDes';
-
+        'titleDes'
+        'descriptionDes'
+        'imageDes';
     }
 }
 @media only screen and (max-width: 590px) {
