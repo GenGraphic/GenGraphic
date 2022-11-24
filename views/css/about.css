@@ -167,6 +167,8 @@ main {
     grid-area: description;
     text-align: justify;
     font-size: 18px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 #aboutDev {
     display: grid;
