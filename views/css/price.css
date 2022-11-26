@@ -22,14 +22,16 @@ body {
 }
 .packages {
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 5px solid rgb(204, 204, 204);
-    height: 500px;
+    height: 590px;
     padding: 30px;
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .favorite-package {
-    height: 600px;
+    height: 680px;
+    border: 5px solid rgba(13,110,253,255);
 }
 .packages ul {
     display: inline-block;
@@ -40,4 +42,22 @@ body {
 .packages-title {
     text-align: center;
     font-size: 2.5em;
+    margin: 0;
+}
+.feature {
+    background-color: white;
+    border-radius: 10px;
+    border: 5px solid rgb(204, 204, 204);
+    margin: 10px;
+    height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#customizePackage {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.prices {
+    font-weight: 600;
+    font-size: 1.5em;
+    color: rgb(73, 80, 87);
 }
