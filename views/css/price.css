@@ -12,6 +12,9 @@ body {
     font-size: 1.5em;
     text-align: center;
 }
+#header {
+    height: 200px;
+}
 #menus {
     opacity: 0;
     transition: 0.2s;
@@ -34,8 +37,6 @@ body {
 .page-title {
     text-align: center;
     color: white;
-    margin-bottom: 5%;
-    margin-top: 5%;
 }
 .packages {
     background-color: white;
@@ -59,22 +60,17 @@ body {
 .packages-title {
     text-align: center;
     font-size: 2.5em;
-    margin: 0;
+    
 }
 .feature {
     background-color: white;
     border-radius: 10px;
     border: 5px solid rgb(204, 204, 204);
-    margin: 10px;
     height: auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .activeFeature {
     border-color: rgba(13,110,253,255);
-}
-#customizePackage {
-    margin-top: 5%;
-    margin-bottom: 5%;
 }
 .prices {
     font-weight: 600;
@@ -107,3 +103,22 @@ footer p {
     margin-right: auto;
 }
 /*Footer finish*/
+
+@media only screen and (max-width: 1200px) {
+    #menus {
+        background-color: rgba(255,165,76,255);
+        height: 100vh;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        font-size: 1.5em;
+        z-index: 1;
+    }
+    #menuBtn {
+        z-index: 1;
+        position: fixed;
+        top: 50px;
+        right: 50px;
+    }
+}

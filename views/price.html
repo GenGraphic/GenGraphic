@@ -22,27 +22,27 @@
                     </div>
                 </div>
             </div>
-            <div  class="col my-auto">
+            <div class="col">
                 <div id="menus" class="row">
-                    <div class="col">
-                        <a class="links" href="../index.html">Home</a>
+                    <div class="col-xl row">
+                        <a class="links align-self-center" href="../index.html">Home</a>
                     </div>
-                    <div class="col">
+                    <div class="col-xl row align-self-center">
                         <a class="links" href="about.html">About us</a>
                     </div>
-                    <div class="col">
+                    <div class="col-xl row align-self-center">
                         <a class="links" href="contact.html">Contact</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-1 my-auto">
+            <div id="menuBtn" class="col-1 my-auto">
                 <img id="menuIcon" class="icon" src="../images/menuIcon.png" alt="Menu Icon">
             </div>
         </div>
     </div>
 
-    <div id="basicPackages" class="container">
+    <div id="basicPackages" class="container mb-5">
         <div class="row h-25">
             <h1 class="page-title">Ready to get Started?</h1>
         </div>
@@ -126,9 +126,12 @@
         </div>   
     </div>
 
-    <div id="customizePackage" class="container">
-        <div class="row g-2">
-            <div class="col-12">
+    <div id="customizePackage" class="container mb-4 mt-4">
+        <div class="row mb-4">
+            <h1 class="text-center" style="color:white">Customize the package to fot your needs.</h1>
+        </div>
+        <div class="row">
+            <div class="col-12 col-xl-4 mb-md-4 mb-xl-0">
                 <div id="package_to_customize" class="container d-flex flex-column packages package-to-customize">
                     <h2 class="packages-title"><strong>Business</strong></h2>
                     <span>Clients favorite choice. Business Website for big businesses.</span>
@@ -153,197 +156,215 @@
                 </div>
             </div>
 
-            <div class="col-12">
+            <div class="col-12 col-lg-12 col-xl-8">
                 <div class="row">
-                    <div class="col feature">
-                        <div class="row">
-                            <div class="col">
-                                <h4>Login System</h2>  
+                    <div class="col-12 col-md-6 mt-4 mt-md-0">
+                        <div class="col-12 col-lg-12 h-100 feature">
+                            <div class="row">
+                                <div class="col">
+                                    <h4>Login System</h4>  
+                                </div>
+                                <div class="col-auto d-flex justify-content-end">
+                                    <input class="toggle" onchange="Add_Take(this)" type="checkbox" unchecked data-toggle="toggle"> 
+                                </div>
                             </div>
-                            <div class="col-auto d-flex justify-content-end">
-                                <input class="toggle" onchange="Add_Take(this)" type="checkbox" unchecked data-toggle="toggle"> 
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <span><strong>1.199€</strong></span>
-                            </div>
-                            <div class="col-8">
-                                <ul>
-                                    <li>login page</li>
-                                    <li>register page</li>
-                                    <li>Backend server</li>
-                                    <li>encrypted DB</li>
-                                </ul> 
+                            <div class="row">
+                                <div class="col">
+                                    <span><strong>1.199€</strong></span>
+                                </div>
+                                <div class="col-8">
+                                    <ul>
+                                        <li>login page</li>
+                                        <li>register page</li>
+                                        <li>Backend server</li>
+                                        <li>encrypted DB</li>
+                                    </ul> 
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col feature">
-                        <div class="row">
-                            <div class="col">
-                                <h4>Search function</h2>  
+                    <div class="col-12 col-md-6 mt-4 mt-md-0">
+                        <div class="col-12 col-lg-12 h-100 feature">
+                            <div class="row">
+                                <div class="col">
+                                    <h4>Search function</h4>  
+                                </div>
+                                <div class="col d-flex justify-content-end">
+                                    <input class="toggle" onchange="Add_Take(this)" type="checkbox" unchecked data-toggle="toggle"> 
+                                </div>
                             </div>
-                            <div class="col d-flex justify-content-end">
-                                <input class="toggle" onchange="Add_Take(this)" type="checkbox" unchecked data-toggle="toggle"> 
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <span><strong>999€</strong></span>
-                            </div>
-                            <div class="col-8">
-                                <ul>
-                                    <li>search box</li>
-                                    <li>fast content loading</li>
-                                    <li>redirecting to content</li>
-                                </ul> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col feature">
-                        <div class="row">
-                            <div class="col-9">
-                                <h4>Download content</h2>  
-                            </div>
-                            <div class="col d-flex justify-content-end">
-                                <input class="toggle" onchange="Add_Take(this)" type="checkbox" unchecked data-toggle="toggle"> 
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <span><strong>1.499€</strong></span>
-                            </div>
-                            <div class="col-8">
-                                <ul>
-                                    <li>download center</li>
-                                    <li>download function</li>
-                                    <li>all type documents</li>
-                                </ul> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col feature">
-                        <div class="row">
-                            <div class="col">
-                                <h4>More Languages</h2>  
-                            </div>
-                            <div class="col d-flex justify-content-end">
-                                <input class="toggle" onchange="Add_Take(this)" type="checkbox" unchecked data-toggle="toggle"> 
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <span><strong>2.499€</strong></span>
-                            </div>
-                            <div class="col-8">
-                                <ul>
-                                    <li>up to 3 languages</li>
-                                    <li>in page language change</li>
-                                </ul> 
+                            <div class="row">
+                                <div class="col">
+                                    <span><strong>999€</strong></span>
+                                </div>
+                                <div class="col-8">
+                                    <ul>
+                                        <li>search box</li>
+                                        <li>fast content loading</li>
+                                        <li>redirecting to content</li>
+                                    </ul> 
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col feature">
-                        <div class="row">
-                            <div class="col">
-                                <h4>Data base</h2>  
+                <div class="row mt-4">
+                    <div class="col-12 col-md-6">
+                        <div class="col-12 col-lg-12 h-100 feature">
+                            <div class="row">
+                                <div class="col-9">
+                                    <h4>Download content</h4>  
+                                </div>
+                                <div class="col d-flex justify-content-end">
+                                    <input class="toggle" onchange="Add_Take(this)" type="checkbox" unchecked data-toggle="toggle"> 
+                                </div>
                             </div>
-                            <div class="col d-flex justify-content-end">
-                                <input class="toggle" onchange="Add_Take(this)" type="checkbox" unchecked data-toggle="toggle"> 
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <span><strong>1.999€</strong></span>
-                            </div>
-                            <div class="col-8">
-                                <ul>
-                                    <li>unlimited size data base</li>
-                                    <li>access for users</li>
-                                    <li>Backend server</li>
-                                    <li>encrypted DB</li>
-                                </ul> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col feature">
-                        <div class="row">
-                            <div class="col">
-                                <h4>Chat</h2>  
-                            </div>
-                            <div class="col d-flex justify-content-end">
-                                <input class="toggle" onchange="Add_Take(this)" type="checkbox" unchecked data-toggle="toggle"> 
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <span><strong>2.499€</strong></span>
-                            </div>
-                            <div class="col-8">
-                                <ul>
-                                    <li>chat page</li>
-                                    <li>encrypted messages</li>
-                                    <li>Backend server</li>
-                                    <li>login sistem</li>
-                                </ul> 
+                            <div class="row">
+                                <div class="col">
+                                    <span><strong>1.499€</strong></span>
+                                </div>
+                                <div class="col-8">
+                                    <ul>
+                                        <li>download center</li>
+                                        <li>download function</li>
+                                        <li>all type documents</li>
+                                    </ul> 
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col feature">
-                        <div class="row">
-                            <div class="col">
-                                <h4>More pages</h2>  
+
+                    <div class="col-12 col-md-6 mt-4 mt-md-0">
+                        <div class="col-12 col-lg-12 h-100 feature">
+                            <div class="row">
+                                <div class="col">
+                                    <h4>More Languages</h4>  
+                                </div>
+                                <div class="col d-flex justify-content-end">
+                                    <input class="toggle" onchange="Add_Take(this)" type="checkbox" unchecked data-toggle="toggle"> 
+                                </div>
                             </div>
-                            <div class="col d-flex justify-content-end">
-                                <input class="toggle" onchange="Add_Take(this)" type="checkbox" unchecked data-toggle="toggle"> 
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <span><strong>999€</strong></span>
-                            </div>
-                            <div class="col-8">
-                                <ul>
-                                    <li>individual Design</li>
-                                    <li>responsize Design</li>
-                                    <li>fast loading time</li>
-                                    <li>animations</li>
-                                </ul> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col feature">
-                        <div class="row">
-                            <div class="col-8">
-                                <h4>Custom Aplication</h2>  
-                            </div>
-                            <div class="col d-flex justify-content-end">
-                                <input class="toggle" onchange="Add_Take(this)" type="checkbox" unchecked data-toggle="toggle"> 
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <span><strong>1.899€</strong></span>
-                            </div>
-                            <div class="col-8">
-                                <ul>
-                                    <li>individual functionality</li>
-                                    <li>fast calculations</li>
-                                    <li>working with user inputs</li>
-                                    <li>Backend server</li>
-                                </ul> 
+                            <div class="row">
+                                <div class="col">
+                                    <span><strong>2.499€</strong></span>
+                                </div>
+                                <div class="col-8">
+                                    <ul>
+                                        <li>up to 3 languages</li>
+                                        <li>in page language change</li>
+                                    </ul> 
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row"></div>
+                <div class="row mt-4">
+                    <div class="col-12 col-md-6">
+                        <div class="col-12 col-lg-12 h-100 feature">
+                            <div class="row">
+                                <div class="col">
+                                    <h4>Data base</h4>  
+                                </div>
+                                <div class="col d-flex justify-content-end">
+                                    <input class="toggle" onchange="Add_Take(this)" type="checkbox" unchecked data-toggle="toggle"> 
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <span><strong>1.999€</strong></span>
+                                </div>
+                                <div class="col-8">
+                                    <ul>
+                                        <li>unlimited size data base</li>
+                                        <li>access for users</li>
+                                        <li>Backend server</li>
+                                        <li>encrypted DB</li>
+                                    </ul> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 mt-4 mt-md-0">
+                        <div class="col-12 col-lg-12 h-100 feature">
+                            <div class="row">
+                                <div class="col">
+                                    <h4>Chat</h4>  
+                                </div>
+                                <div class="col d-flex justify-content-end">
+                                    <input class="toggle" onchange="Add_Take(this)" type="checkbox" unchecked data-toggle="toggle"> 
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <span><strong>2.499€</strong></span>
+                                </div>
+                                <div class="col-8">
+                                    <ul>
+                                        <li>chat page</li>
+                                        <li>encrypted messages</li>
+                                        <li>Backend server</li>
+                                        <li>login sistem</li>
+                                    </ul> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 col-md-6">
+                        <div class="col-12 col-lg-12 h-100 feature">
+                            <div class="row">
+                                <div class="col">
+                                    <h4>More pages</h4>  
+                                </div>
+                                <div class="col d-flex justify-content-end">
+                                    <input class="toggle" onchange="Add_Take(this)" type="checkbox" unchecked data-toggle="toggle"> 
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <span><strong>999€</strong></span>
+                                </div>
+                                <div class="col-8">
+                                    <ul>
+                                        <li>individual Design</li>
+                                        <li>responsize Design</li>
+                                        <li>fast loading time</li>
+                                        <li>animations</li>
+                                    </ul> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 mt-4 mt-md-0">
+                        <div class="col-12 col-lg-12 h-100  feature">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h4>Custom Aplication</h4>  
+                                </div>
+                                <div class="col d-flex justify-content-end">
+                                    <input class="toggle" onchange="Add_Take(this)" type="checkbox" unchecked data-toggle="toggle"> 
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <span><strong>1.899€</strong></span>
+                                </div>
+                                <div class="col-8">
+                                    <ul>
+                                        <li>individual functionality</li>
+                                        <li>fast calculations</li>
+                                        <li>working with user inputs</li>
+                                        <li>Backend server</li>
+                                    </ul> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
