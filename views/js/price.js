@@ -1,4 +1,23 @@
 var packageToCustomize = document.getElementById('package_to_customize');
+//const for the menu
+const menuIcon = document.getElementById('menuIcon');
+const menuOptions = document.getElementById('menus');
+var menuToggle = false;
+
+//menu show and hide
+//making button for menu
+menuIcon.addEventListener('click', () => { 
+    if (!menuToggle)
+    {
+        menuOptions.style.opacity = '1';
+        menuIcon.src = '../images/exit.png';
+        menuToggle = true;
+    }else if(menuToggle) {
+        menuOptions.style.opacity = '0';
+        menuIcon.src = '../images/menuIcon.png';
+        menuToggle = false;
+    }
+});
 
 //replace the div of package to customize with the one is clicked
 document.addEventListener('click', function(e) {
