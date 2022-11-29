@@ -73,36 +73,30 @@
         background-color: rgba(50,38,162,255);
         opacity: 0.9;
     }
-    #menuOptions {
-        opacity: 0;
-        float: left;
-        width: 90%;
+    #menu {
+       display: none;
+       transition: 0.2s;
     }
     
-    #menuIcon {
-        vertical-align: middle;
+    #logoTitle {
+        color: white;
+        font-size: 1.5em;
+        text-decoration: none;
+        cursor: pointer;
     }
     #menuIcon:hover {
         cursor: pointer;
     }
     #title {
-        font-size: 5rem;
+        font-size: 5em;
         font-weight: 100;
-        margin-top: 0;
     }
     #slogan {
         font-weight: 100;
-        margin-bottom: 0;
-    }
-    #titleCont {
-        padding-top: 5rem;
-        text-align: center;
     }
     #contactBtn {
         color: white;
         background-color: transparent;
-        width: 200px;
-        height: 50px;
         border-radius: 50px;
         border: 1px solid white;
     }
@@ -314,22 +308,22 @@
     }
     
 }
-@media only screen and (max-width: 895px) {
-    #menuOptions {
-        position:absolute;
-        width: 30%;
-        right: 5%;
-        display: grid;
-        top: 100px;
+@media only screen and (max-width: 1200px) {
+    #menus {
+        background-color: rgba(255,165,76,255);
+        height: 100vh;
+        width: 210px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        font-size: 1.5em;
+        z-index: 1;
     }
-    #menuOptions a {
-        float: none;
-        margin: 0;
-        padding: 10px;
-        text-align: center;
-        border: 1px solid white;
-        border-radius: 20px;
-        font-size: 1.5rem;
+    #menuBtn {
+        z-index: 1;
+        position: fixed;
+        top: 50px;
+        right: 50px;
     }
 }
 @media only screen and (max-width: 590px) {

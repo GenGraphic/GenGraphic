@@ -4,7 +4,7 @@ const linkedin = document.getElementById('linkedinLink');
 const upworkLink = document.getElementById('upworkLink');
 //const for the menu
 const menuIcon = document.getElementById('menuIcon');
-const menuOptions = document.getElementById('menuOptions');
+const menuOptions = document.getElementById('menu');
 var menuToggle = false;
 
 //making buttons for footer
@@ -22,11 +22,11 @@ upworkLink.addEventListener('click', () => {
 menuIcon.addEventListener('click', () => { 
     if (!menuToggle)
     {
-        menuOptions.style.opacity = '1';
+        menuOptions.style.display = 'block';
         menuIcon.src = 'images/exit.png';
         menuToggle = true;
     }else if(menuToggle) {
-        menuOptions.style.opacity = '0';
+        menuOptions.style.display = 'none';
         menuIcon.src = 'images/menuIcon.png';
         menuToggle = false;
     }

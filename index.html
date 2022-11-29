@@ -5,102 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GEN Graphic</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="main.css">
 </head>
-    <link rel="stylesheet" href="main.css">
 <body>
-    <main>
-        <div id="welcomePart">
-            <div class="" id="header">
-                <div id="logoDiv">
-                    <img class="logo" src="images/Simplelogo.png" alt="Logo">
-                    <a class="links" id="pageName" href="index.html">GEN Graphic</a>
-                </div>
-                <div id="menuIconDiv">
-                    <div id="menuOptions">
-                        <a class="links" href="views/about.html">About Us</a>
-                        <a class="links" href="views/contact.html">Contact</a>
-                        <a class="links" href="views/price.html">Our Prices</a>
+    <div id="header" class="container">
+        <div class="row m-3">
+            <div class="col my-auto">
+                <div class="row">
+                    <div class="col-auto my-auto">
+                        <img id="logo" class="logo" src="images/Simplelogo.png" alt="Logo">
                     </div>
-                    <img id="menuIcon" class="icon" src="images/menuIcon.png" alt="Menu Icon">                    
+                    <div class="col my-auto">
+                        <a id="logoTitle" href="index.html">Gen Graphic</a>
+                    </div>
                 </div>
             </div>
-            <div id="titleCont">
+            <div class="col" id="menu">
+                <div id="menus" class="row">
+                    <div class="col-xl row">
+                        <a class="links align-self-center" href="views/contact.html">Contact</a>
+                    </div>
+                    <div class="col-xl row align-self-center">
+                        <a class="links" href="views/about.html">About us</a>
+                    </div>
+                    <div class="col-xl row align-self-center">
+                        <a class="links" href="views/price.html">Prices</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="menuBtn" class="col-1 my-auto">
+                <img id="menuIcon" class="icon" src="images/menuIcon.png" alt="Menu Icon">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="welcomePart">
+        <div class="row text-center" id="titleCont">
+            <div class="col-6 mx-auto align-self-center">
                 <h2 id="slogan">WEB AT HIGH STANDARDS</h2>
                 <h1 id="title">GEN GRAPHIC</h1>
-                <button id="contactBtn">Contact us</button>
+                <button id="contactBtn">Contact us</button>  
             </div>
+            
         </div>
-        <div id="firstInfo">
-            <div class="textAreas">
-                <h1 id="titleInfo1">Why you <strong>need</strong> us?</h1>
-                <p id="textInfo1">We are a young and successful team, which
-                    comes to your help with the newest and
-                    original ideas for your needs in the field
-                    website.</p>
-            </div>
-            <img class="imagesDecor" src="images/woman_on_phone.jpg" alt="Girl on phone">
+    </div>
+    <div id="firstInfo">
+        <div class="textAreas">
+            <h1 id="titleInfo1">Why you <strong>need</strong> us?</h1>
+            <p id="textInfo1">We are a young and successful team, which
+                comes to your help with the newest and
+                original ideas for your needs in the field
+                website.</p>
         </div>
-        <div id="secondInfo">
-            <div class="textAreas" id="textArea2">
-                <h1>Why you should <strong>Choose</strong> us?</h1>
-                <p><Strong>PROMPTITY-QUALITY-DIVERSITY</Strong> </br>
-                    These are the three words that define our high
-                    quality that we offer to our clients.</p>
-            </div>
+        <img class="imagesDecor" src="images/woman_on_phone.jpg" alt="Girl on phone">
+    </div>
+    <div id="secondInfo">
+        <div class="textAreas" id="textArea2">
+            <h1>Why you should <strong>Choose</strong> us?</h1>
+            <p><Strong>PROMPTITY-QUALITY-DIVERSITY</Strong> </br>
+                These are the three words that define our high
+                quality that we offer to our clients.</p>
         </div>
-        <div id="servicesPart">
-            <h1 style="text-align: center;font-weight: 100;">How it works?</h1>
-            <div id="containerUp">
-                <div id="div1">
-                    <div class="overlay" id="div1Overlay">
-                        <div>
-                            <h1>Contact us!</h1>
-                            <p>Tell us what you need, your vision, your dream website. We gather all the informationen. We can make a video call if that's what you need. </p>
-                        </div>
+    </div>
+    <div id="servicesPart">
+        <h1 style="text-align: center;font-weight: 100;">How it works?</h1>
+        <div id="containerUp">
+            <div id="div1">
+                <div class="overlay" id="div1Overlay">
+                    <div>
+                        <h1>Contact us!</h1>
+                        <p>Tell us what you need, your vision, your dream website. We gather all the informationen. We can make a video call if that's what you need. </p>
                     </div>
                 </div>
-
-                <div id="div2">
-                    <div class="overlay" id="div2Overlay">
-                        <div>
-                           <h1>Desing</h1>
-                            <p>With the data we have collected we make your Design. We show you color pallets, grids, and how your page would look like. If you like it, we make it. </p> 
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
-            <div id="containerDown">
-                <div id="div3">
-                    <div class="overlay" id="div3Overlay">
-                        <div>
-                            <h1>Programming</h1>
-                            <p>In this stage we do all the things user don't usually see, but that's make your website work. You can see it as the engine, not everyone knows how it works, but every car has one.</p>
-                        </div>
+            <div id="div2">
+                <div class="overlay" id="div2Overlay">
+                    <div>
+                       <h1>Desing</h1>
+                        <p>With the data we have collected we make your Design. We show you color pallets, grids, and how your page would look like. If you like it, we make it. </p> 
                     </div>
                 </div>
-
-                <div id="div4">
-                    <div class="overlay" id="div4Overlay">
-                        <div>
-                            <h1>Hosting</h1>
-                            <p>This stage is optionally, we know that not everyone have his own server or know how to host someting on server. We can help you with that too, so that you don't have to think about anything.</p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+
         </div>
-        <footer>
-            <div id="socialMedia">
-                <img id="facebookLink" class="icon" src="images/facebook-app-icon.png" alt="Facebook Icon">
-                <img id="linkedinLink" class="icon" src="images/linkedin-app-icon.png" alt="LinkedIn Icon">
-                <img id="upworkLink" class="icon" src="images/upwork-icon.png" alt="Upwork Logo">
+
+        <div id="containerDown">
+            <div id="div3">
+                <div class="overlay" id="div3Overlay">
+                    <div>
+                        <h1>Programming</h1>
+                        <p>In this stage we do all the things user don't usually see, but that's make your website work. You can see it as the engine, not everyone knows how it works, but every car has one.</p>
+                    </div>
+                </div>
             </div>
-            <p>Copyright ©2022 All rights reserved to Gen Graphic</p>
-        </footer>
-    </main>
+
+            <div id="div4">
+                <div class="overlay" id="div4Overlay">
+                    <div>
+                        <h1>Hosting</h1>
+                        <p>This stage is optionally, we know that not everyone have his own server or know how to host someting on server. We can help you with that too, so that you don't have to think about anything.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div id="socialMedia">
+            <img id="facebookLink" class="icon" src="images/facebook-app-icon.png" alt="Facebook Icon">
+            <img id="linkedinLink" class="icon" src="images/linkedin-app-icon.png" alt="LinkedIn Icon">
+            <img id="upworkLink" class="icon" src="images/upwork-icon.png" alt="Upwork Logo">
+        </div>
+        <p>Copyright ©2022 All rights reserved to Gen Graphic</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="main.js"></script>
 </body>
-<script src="main.js"></script>
 </html>
