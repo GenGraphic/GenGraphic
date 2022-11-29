@@ -4,15 +4,6 @@
     }
     body {
         background-color: rgba(75, 55, 154, 255);
-        margin: 0;
-    }
-    main {
-        width: 90%;
-        background-color: white;
-        margin-left: auto;
-        margin-right: auto;
-        height: auto;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
     }
 
     /*Aici incepe styleingul pentru prima parte a paginii 
@@ -34,7 +25,6 @@
         height: 500px;
         color: white;
         font-family: 'Courier New', Courier, monospace;
-        width: 100%;
     }
     #header {
         display: grid;
@@ -65,14 +55,6 @@
         text-align: right;
         margin: 60px;
     }
-    .sticky {
-        width: 90%;
-        height: 100px;
-        position: fixed;
-        top: 0;
-        background-color: rgba(50,38,162,255);
-        opacity: 0.9;
-    }
     #menu {
        display: none;
        transition: 0.2s;
@@ -88,7 +70,6 @@
         cursor: pointer;
     }
     #title {
-        font-size: 5em;
         font-weight: 100;
     }
     #slogan {
@@ -96,17 +77,11 @@
     }
     #contactBtn {
         color: white;
-        background-color: transparent;
-        border-radius: 50px;
-        border: 1px solid white;
+        width: 150px;
+        height: 60px;
+        border-color: white;
     }
 
-    /*aici pot sa mai adaug animatie pentru schimbarea culorii*/
-
-    #contactBtn:hover {
-        background-image: linear-gradient(to left, rgba(169,84,199,255), rgba(50,38,162,255));
-        border: none;
-    }
     /*Aici se termina styleingul pentru prima parte a paginii 
     unde se afla header-ul, si titlul */
 
@@ -114,14 +89,10 @@
 
     /*Aici incepe styleingul pentru partea 2 a paginii*/
     #firstInfo {
-        overflow: hidden;
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
+        background-color: white;
     }
     #titleInfo1 {
         font-weight: 100;
-        font-family: 'Courier New', Courier, monospace;
     }
     #textInfo1 {
         color: #777777;
@@ -129,20 +100,6 @@
         font-weight: 300;
         line-height: 1.5em;
         font-size: 18px;
-        float: left;
-    }
-    .imagesDecor {
-        width: 400px;
-        height: auto;
-    }
-    .textAreas {
-        width: 45%;
-        float: left;
-        padding: 5%;
-    }
-    #firstInfo img {
-        float: left;
-        padding: 5% 5% 5% 0;
     }
     /*Aici se termina styleingul pentru partea 2 a paginii*/
 
@@ -150,15 +107,14 @@
     /*Aici incepe styleingul pentru partea 3 a paginii*/
 
     #secondInfo{
-        overflow: hidden;
         background-image: url('images/secondInfoImage.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        height: 400px;
     }
     #textArea2 {
-        float: right;
         color: rgb(229, 229, 229);
     }
     #textArea2 h1 {
@@ -166,7 +122,6 @@
         font-family: 'Courier New', Courier, monospace;
     }
     #textArea2 p {
-        font-family: "Poppins", sans-serif;
         font-weight: 300;
         line-height: 1.5em;
         font-size: 18px;
@@ -175,90 +130,40 @@
 
     /*Aici incepe styleingul pentru partea 4 a paginii*/
     #servicesPart {
-        overflow: hidden;
+        background-color: white;
     }
-    #containerUp {
-        width: 76%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #div1 {
-        background-image: url('images/order.jpg');
+    .div {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        width: 45%;
-        height: 500px;
-        float: left;
         border-radius: 20px;
-        margin: 20px;
+        height: 500px;
+    }
+
+    #div1 {
+        background-image: url('images/order.jpg');
     }
     #div2 {
         background-image: url('images/deign.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 45%;
-        height: 500px;
-        float: right;
-        border-radius: 20px;
-        margin: 20px;
-
-    }
-    #containerDown {
-        width: 76%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 50px;
     }
     #div3 {
         background-image: url('images/programming.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 45%;
-        height: 500px;
-        float: left;
-        border-radius: 20px;
-        margin: 20px;
-
     }
     #div4 {
-        background-image: url('images/sever.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 45%;
-        height: 500px;
-        float: right;
-        border-radius: 20px;
-        margin: 20px;
-        
+        background-image: url('images/sever.jpg');   
     }
     .overlay {
         background-image: linear-gradient(to left, rgba(169,84,199,0.7), rgba(50,38,162,0.7));
-        width: 100%;
-        height: 100%;
         border-radius: 20px;
-        position: relative;
     }
     
     .overlay h1 {
-    margin: 0;
-    color: rgb(229, 229, 229); 
-    text-align: center;
-    font-size: 2em;
+        color: rgb(229, 229, 229); 
+        font-size: 2em;
     }
     .overlay p {
         color: rgb(229, 229, 229);
-        text-align: center;
         font-size: 1.5em;
-    }
-    .overlay div {
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
     }
     
     /*Aici se termina styleingul pentru partea 4 a paginii*/
@@ -281,88 +186,3 @@
         margin-right: auto;
     }
     /*Footer finish*/
-
-/*Make it responsive*/
-@media only screen and (max-width: 1170px) {
-    #div1, #div2, #div3, #div4 {
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-        height: 400px;
-    }
-    #firstInfo div {
-        width: 70%;
-        float: none;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #firstInfo img {
-        width: 60%;
-        display: block;
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 5%;
-    }
-    
-}
-@media only screen and (max-width: 1200px) {
-    #menus {
-        background-color: rgba(255,165,76,255);
-        height: 100vh;
-        width: 210px;
-        position: fixed;
-        top: 0;
-        right: 0;
-        font-size: 1.5em;
-        z-index: 1;
-    }
-    #menuBtn {
-        z-index: 1;
-        position: fixed;
-        top: 50px;
-        right: 50px;
-    }
-}
-@media only screen and (max-width: 590px) {
-    #title {
-        font-size: 3rem;
-    }
-    #div1, #div2, #div3, #div4 {
-        width: 95%;
-        height: 300px;
-    }
-    .overlay p {
-        font-size: 1em;
-    }
-    .overlay h1 {
-        font-size: 1.5em;
-    }
-    .overlay:focus {
-        animation-name: overlays;
-        animation-duration: 0.6s;
-        animation-fill-mode: forwards;
-        -webkit-animation-timing-function: linear;
-        animation-timing-function: linear;
-    }
-}
-@media only screen and (max-width: 495px) {
-    #pageName {
-        font-size: 1rem;
-    }
-    #menuOptions {
-        width: 35%;
-    }
-    .logo {
-        width: 50px;
-        height: 50px;
-    }
-    #textArea2 {
-        width: 100%;
-        float: none;
-        padding: 5px;
-    }
-
-}
