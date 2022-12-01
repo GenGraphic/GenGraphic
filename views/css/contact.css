@@ -2,20 +2,8 @@
 *{
     font-family: 'Courier New', Courier, monospace;
 }
-p {
-    font-weight: 300;
-    font-family: "Poppins", sans-serif;
-}
 body {
     background-color: rgba(75, 55, 154, 255);
-    margin: 0;
-}
-main {
-    background-color: white;
-    margin-left: 5%;
-    margin-right: 5%;
-    height: auto;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /*Aici incepe styleingul pentru prima parte a paginii 
@@ -28,6 +16,31 @@ main {
         width: 70px;
         height: 70px;
     }
+    .links {
+        color: white;
+        text-decoration: none;
+        margin: 20px;
+        font-size: 1.5rem;
+    }
+    #logoTitle {
+        color: white;
+        font-size: 1.5em;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    #menu {
+        display: none;
+        transition: 0.3s;
+    }
+    #menuIcon:hover {
+        cursor: pointer;
+    }
+    #title, #slogan {
+        font-weight: 100;
+    }
+    #slogan {
+        font-weight: 100;
+    }
     #welcomePart {
         background-image: url("../../images/welcomeScrenn.jpg");
         background-color: rgba(165,82,197,255);
@@ -36,230 +49,46 @@ main {
         background-position: center;
         height: 500px;
         color: white;
-        font-family: 'Courier New', Courier, monospace;
-        width: 100%;
-    }
-    #header {
-        display: grid;
-        grid-auto-flow: column;
-    }
-    .links {
-        color: white;
-        text-decoration: none;
-        margin: 20px;
-        font-size: 1.5rem;
-    }
-    #logoDiv {
-        width: 100%;
-        margin: 30px;
-        display: table;
-        border-collapse: collapse;
-    }
-    #pageName {
-        color: white;
-        text-decoration: none;
-        font-size: 2rem;
-        display: table-cell;
-        vertical-align: middle;
-        width: 99%;
-    }
-    #menuIconDiv {
-        display: table;
-        text-align: right;
-        margin: 60px;
-    }
-    .sticky {
-        width: 90%;
-        height: 100px;
-        position: fixed;
-        top: 0;
-        background-color: rgba(50,38,162,255);
-        opacity: 0.9;
-    }
-    #menuOptions {
-        opacity: 0;
-        float: left;
-        width: 90%;
-    }
-    
-    #menuIcon {
-        vertical-align: middle;
-    }
-    #menuIcon:hover {
-        cursor: pointer;
-    }
-    #title {
-        font-size: 5rem;
-        font-weight: 100;
-        margin-top: 0;
-    }
-    #slogan {
-        font-weight: 100;
-        margin-bottom: 0;
-    }
-    #titleCont {
-        padding-top: 5rem;
-        text-align: center;
-    }
-    #contactBtn {
-        color: white;
-        background-color: transparent;
-        width: 200px;
-        height: 50px;
-        border-radius: 50px;
-        border: 1px solid white;
-    }
-
-    /*aici pot sa mai adaug animatie pentru schimbarea culorii*/
-
-    #contactBtn:hover {
-        background-image: linear-gradient(to left, rgba(169,84,199,255), rgba(50,38,162,255));
-        border: none;
     }
     /*Aici se termina styleingul pentru prima parte a paginii 
     unde se afla header-ul, si titlul */
 
-    /*Aici incepe designul pentru datele de contact*/
-    #contactDaten h1 {
-        text-align: center; 
-        margin-top: 0;
-        font-weight: 100;
+    /*Media links style*/
+    .media {
+        background-color: white;
+        border-radius: 20px;
+        border: 5px solid rgb(204, 204, 204);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
-    #datenContainer * {
-        background-color: rgba(165,82,197,255);
-        height: 30px;
-        margin: 0 0 10px 0;
+    #titleMedia {
         color: white;
     }
-
-    #phoneTxt {grid-area: phoneTxt;}
-    #emailTxt {grid-area: emailTxt;}
-    #facebookTxt {grid-area: facebookTxt;}
-    #fiverTxt {grid-area: fiverTxt;}
-    #upworkTxt {grid-area: upworkTxt;}
-    #linkedinTxt {grid-area: linkedinTxt;}
-    #gitTxt {grid-area: gitTxt;}
-
-    #phone {grid-area: phone;}
-    #email {grid-area: email;}
-    #facebook {grid-area: facebook;}
-    #fiver {grid-area: fiver;}
-    #upwork {grid-area: upwork;}
-    #linkedin {grid-area: linkedin;}
-    #git {grid-area: git;}
-
-    #datenContainer {
-        border-radius: 20px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-        width: 70%;
-        display: grid;
-        grid-template-areas: 
-        'phoneTxt phone'
-        'emailTxt email'
-        'facebookTxt facebook'
-        'fiverTxt fiver'
-        'upworkTxt upwork'
-        'linkedinTxt linkedin'
-        'gitTxt git';
-    }
-    #datenContainer p {
-        border-radius: 20px 0 0 20px;
-    }
-    #datenContainer a {
-        text-decoration: none;
-        border-radius: 0 20px 20px 0;
-    }
-    /*Aici se incheie designul pentru datele de contact*/
 
     /*Aici incep sa fac style pentru google map*/
-    #adressDiv p {
-        color: white;
-        font-size: 18px;
-    }
-    #adressDiv {
-        grid-area: adresses;
-        margin: auto;
-    }
-    #map {
-        grid-area: map;
-        width: 100%;
-        height:auto;
-    }
-    #googleMap h1 {
-        grid-area: titleMap;
-        text-align: center; 
-        color:white;
-        font-weight: 100;
-    }
     #googleMap {
         background-image: url('../../images/map.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        display: grid;
-        grid-template-areas: 
-        'titleMap map'
-        'adresses map';
+    }
+    #adress, #titleAdress {
+        color: white;
+    }
+    .wrapped {
+        word-wrap: break-word;
     }
     /*Aici se termine style pentru google map*/
 
     /*Aici incep designul pentru Email*/
-    #sendEmail {
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #sendEmail h1 {
-        font-weight: 100;
-        text-align: center;
-    }
-    #emailInput {
-        grid-area: email;
-    }
-    #nameInput {
-        grid-area: name;
-    }
-    #messageInput {
-        grid-area: message;
-    }
-    #sendEmailBtn {
-        grid-area: sendBtn;
-    }
-    #emailForm {
-        display: grid;
-        grid-template-areas: 
-        'email name'
-        'message message'
-        'sendBtn sendBtn';
-    }
     #emailForm input {
-        margin: 10px;
-        height: 30px;
         border: 2px solid rgb(50,38,162);
     }
     #emailForm textarea {
         border: 2px solid rgb(50,38,162);
-        margin: 10px;
-        height: 70px;
     }
-    #sendEmailBtn {
-        width: 30%;
-        height: 30px;
-        margin-bottom: 20px;
-        border-radius: 35px;
-        border: 2px solid rgb(50,38,162);
-        background-color: wheat;
-        justify-self: end;
-    }
-    #sendEmailBtn:hover {
-        background-image: linear-gradient(to left, rgba(169,84,199,255), rgba(50,38,162,255));
-        border: none;
+    #sendEmailBtn, #titleEmail {
         color: white;
     }
-
     /*Aici se termina designul pentru Email*/
 
     /*Footer start*/
@@ -281,62 +110,22 @@ main {
     }
     /*Footer finish*/
 
-    @media only screen and (max-width: 950px) {
-        #datenContainer {
-            width: 90%;
+    @media only screen and (max-width: 1200px) {
+        #menus {
+            background-color: rgba(255,165,76,255);
+            height: 100vh;
+            width: 210px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            font-size: 1.5em;
+            z-index: 1;
         }
-        #title {
-            font-size: 4rem;
-        }
-    }
-    @media only screen and (max-width: 895px) {
-        #menuOptions {
-            position:absolute;
-            width: 30%;
-            right: 5%;
-            display: grid;
-            top: 100px;
-        }
-        #menuOptions a {
-            float: none;
-            margin: 0;
-            padding: 10px;
-            text-align: center;
-            border: 1px solid white;
-            border-radius: 20px;
-            font-size: 1.5rem;
-        }
-        #title {
-            font-size: 3rem;
+        #menuBtn {
+            z-index: 1;
+            position: fixed;
+            top: 50px;
+            right: 50px;
         }
     }
-    @media only screen and (max-width: 750px) {
-        #datenContainer {
-            width: 100%;
-            font-size: 0.5rem;
-        }
-        #sendEmail {
-            width: 100%;
-        }
-        #title {
-            font-size: 2rem;
-        }
-    }
-    @media only screen and (max-width: 500px) {
-        #googleMap {
-            grid-template-areas: 
-            'titleMap titleMap'
-            'adresses adresses'
-            'map map';
-        }
-        #emailForm {
-            grid-template-areas: 
-            'email'
-            'name'
-            'message'
-            'sendBtn';
-        }
-        #menuIconDiv {
-            margin: 30px;
-        }
-    }
+    

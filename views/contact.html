@@ -6,94 +6,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
 </head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet"/>
 <link rel="stylesheet" href="css/contact.css">
 <body>
-    <main>
-        <div id="welcomePart">
-            <div id="header">
-                <div id="logoDiv">
-                    <img class="logo" src="../images/Simplelogo.png" alt="Logo">
-                    <a class="links" id="pageName" href="../index.html">GEN Graphic</a>
-                </div>
-                <div id="menuIconDiv">
-                    
-                    <div id="menuOptions">
-                        <a class="links" href="../index.html">Home</a>
-                        <a class="links" href="about.html">About us</a>
-                        <a class="links" href="price.html">Our Prices</a>
+    <div id="header" class="container">
+        <div class="row m-3">
+            <div class="col my-auto">
+                <div class="row">
+                    <div class="col-auto my-auto">
+                        <img id="logo" class="logo" src="../images/Simplelogo.png" alt="Logo">
                     </div>
-                    
-                    <img id="menuIcon" class="icon" src="../images/menuIcon.png" alt="Menu Icon"> 
-
+                    <div class="col my-auto">
+                        <a id="logoTitle" href="../index.html">Gen Graphic</a>
+                    </div>
                 </div>
             </div>
-            <div id="titleCont">
+            <div class="col" id="menu">
+                <div id="menus" class="row">
+                    <div class="col-xl row">
+                        <a class="links align-self-center" href="../index.html">Home</a>
+                    </div>
+                    <div class="col-xl row align-self-center">
+                        <a class="links" href="about.html">About us</a>
+                    </div>
+                    <div class="col-xl row align-self-center">
+                        <a class="links" href="price.html">Prices</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="menuBtn" class="col-1 my-auto">
+                <img id="menuIcon" class="icon" src="../images/menuIcon.png" alt="Menu Icon">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="welcomePart">
+        <div class="row text-center h-100" id="titleCont">
+            <div class="col-12 mx-auto my-auto">
                 <h2 id="slogan">WEB AT HIGH STANDARDS</h2>
                 <h1 id="title">GEN GRAPHIC</h1>
+            </div>  
+        </div>
+    </div>
+
+    <div class="container mb-4">
+        <div class="row">
+
+            <div class="col-xl-12 mt-5 mb-5 text-center">
+                <h1 id="titleMedia">We are everywhere you are</h1>
+            </div>
+
+            <div class="col-xl-12">
+
+                <div class="row">
+                    <div class="col-sm-12 mt-lg-4 col-lg-6">
+                        <div class="col text-center media">
+                            <p>Git Hub:</p>
+                            <a class="wrapped" target="_blank" rel="noopener noreferrer" href="https://github.com/GenGraphic">https://github.com/GenGraphic</a>
+                        </div>
+                    </div>
+                    
+                    <div class=" col-sm-12 mt-4 col-lg-6">
+                        <div class="col text-center media">
+                            <p>E-mail:</p>
+                            <a class="wrapped">gengraphicservices@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row mt-4">
+                    <div class="col-sm-12 mt-lg-4 col-lg-6">
+                        <div class="col text-center media">
+                            <p id="facebookTxt">Facebook:</p>
+                            <a class="wrapped" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100087527200353">https://www.facebook.com/profile.php?id=100087527200353</a>
+                        </div>
+                    </div>
+    
+                    <div class="col-sm-12 mt-4 col-lg-6">
+                        <div class="col text-center media">
+                            <p>Fiver:</p>
+                            <a class="wrapped" target="_blank" rel="noopener noreferrer" href="https://www.fiverr.com/gengraphic?up_rollout=true">https://www.fiverr.com/gengraphic?up_rollout=true</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row mt-4">
+                    <div class="col-sm-12 mt-lg-4 col-lg-6">
+                        <div class="col text-center media">
+                            <p>LinkedIn:</p>
+                            <a class="wrapped" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gen-graphic-b10152256/">https://www.linkedin.com/in/gen-graphic-b10152256/</a>
+                        </div>
+                    </div>
+    
+                    <div class="col-sm-12 mt-4 col-lg-6">
+                        <div class="col text-center media">
+                            <p>Upwork:</p>
+                            <a class="wrapped" target="_blank" rel="noopener noreferrer" href="https://www.upwork.com/freelancers/~017e3bb98e715-de75a">https://www.upwork.com/freelancers/~017e3bb98e715de75a</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row mt-4">
+                    <div class="col">
+                        <div class="col text-center media">
+                            <p>Phone nummber:</p>
+                            <button id="phoneCall" type="button" class="btn btn-outline-primary">+49 151 45255302</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="contactDaten">
-            <h1>We are everywhere you are</h1>
+    </div>
 
-            <div id="datenContainer">
-                <p id="phoneTxt">Phone nummber:</p>
-                <a id="phone" href="tel:+4915145255302">+49 151 45255302</a>
+    <div class="container p-5" id="googleMap">
+        <div class="row">
+            <div class="col-xl-6 text-center">
+                <h1 id="titleAdress">Pay us a visit</h1>
+                <div id="adress">
+                    <h2>Adress:</h2>
+                    <p>Country: Germany</p>
+                    <p>Street: Seilerweg 9</p>
+                    <p>City: Moosburg a.d.Isar</p>
+                    <p>*Please let us know if you come by.</p>
+                </div>
+            </div>
 
-                <p id="emailTxt">E-mail:</p>
-                <a id="email">gengraphicservices@gmail.com</a>
-
-                <p id="facebookTxt">Facebook</p>
-                <a id="facebook" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100087527200353">https://www.facebook.com/profile.php?id=100087527200353</a>
-
-                <p id="fiverTxt">Fiver:</p>
-                <a id="fiver" target="_blank" rel="noopener noreferrer" href="https://www.fiverr.com/gengraphic?up_rollout=true">https://www.fiverr.com/gengraphic?up_rollout=true</a>
-
-                <p id="upworkTxt">Upwork:</p>
-                <a id="upwork" target="_blank" rel="noopener noreferrer" href="https://www.upwork.com/freelancers/~017e3bb98e715de75a">https://www.upwork.com/freelancers/~017e3bb98e715de75a</a>
-
-                <p id="linkedinTxt">LinkedIn:</p>
-                <a id="linkedin" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/gen-graphic-b10152256/">https://www.linkedin.com/in/gen-graphic-b10152256/</a>
-
-                <p id="gitTxt">Git Hub:</p>
-                <a id="git" target="_blank" rel="noopener noreferrer" href="https://github.com/GenGraphic">https://github.com/GenGraphic</a>
+            <div class="col-xl-6 p-0">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10581.072382222079!2d11.9310415!3d48.470571!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e3de261301fa7%3A0x20e6c7262161a039!2sGen%20Graphic!5e0!3m2!1sen!2sde!4v1668245731557!5m2!1sen!2sde" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-        <div id="googleMap">
-            <h1>Pay us a <strong>visit</strong></h1>
-            <div id="adressDiv">
-                <h2 style="color: white;">Adress:</h2>
-                <p>Country: Germany</p>
-                <p>City: Moosburg a.d.Isar</p>
-                <p>Street: Bahnhofstrasse 1</p>
-                <p style="font-size: 10px; text-decoration: underline;">*Please let us know if you come by.</p>
+    </div>
+
+    <div class="container mb-5 mt-5" id="sendEmail">
+        <div class="row">
+            <div class="col-xl-12 text-center">
+                <h1 id="titleEmail">Or send us an <strong>E-mail</strong></h1>
+
             </div>
-            <div id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10581.072382222079!2d11.9310415!3d48.470571!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e3de261301fa7%3A0x20e6c7262161a039!2sGen%20Graphic!5e0!3m2!1sen!2sde!4v1668245731557!5m2!1sen!2sde" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="col-xl-12">
+                <form class="row" id="emailForm" method="POST" action="https://formsubmit.co/gengraphicservices@gmail.com">
+
+                    <div class="col-xl-6 mt-4">
+                        <input class="w-100" required id="emailInput" name="email" type="email" placeholder="Your E-mail adress">
+                    </div>
+
+                    <div class="col-xl-6 mt-4">
+                        <input class="w-100" required id="nameInput" name="name" type="text" placeholder="Enter your name">
+                    </div>
+
+                    <div class="col-xl-12 mt-4">
+                        <textarea class="w-100" id="messageInput" name="message" type="text" placeholder="Your message is..."></textarea>
+                    </div>
+
+                    <div class="col-xs-6 mt-4 text-center">
+                        <button id="sendEmailBtn" type="submit" class="btn btn-outline-primary">Send Email</button>  
+                    </div>
+
+                    <input type="hidden" name="_next" value="https://gengraphic.github.io/GenGraphic/">
+                </form>
             </div>
         </div>
-        <div id="sendEmail">
-            <h1>Or send us an <strong>E-mail</strong></h1>
-            <form id="emailForm" method="POST" action="https://formsubmit.co/gengraphicservices@gmail.com">
-                <input required id="emailInput" name="email" type="email" placeholder="Your E-mail adress">
-
-                <input required id="nameInput" name="name" type="text" placeholder="Enter your name">
-
-                <textarea id="messageInput" name="message" type="text" placeholder="Your message is..."></textarea>
-
-                <input type="hidden" name="_next" value="https://gengraphic.github.io/GenGraphic/">
-
-                <button id="sendEmailBtn" type="submit">Send Email</button>
-            </form>
+    </div>
+    <footer>
+        <div id="socialMedia">
+            <img id="facebookLink" class="icon" src="../images/facebook-app-icon.png" alt="Facebook Icon">
+            <img id="linkedinLink" class="icon" src="../images/linkedin-app-icon.png" alt="LinkedIn Icon">
+            <img id="upworkLink" class="icon" src="../images/upwork-icon.png" alt="Upwork Logo">
         </div>
-        <footer>
-            <div id="socialMedia">
-                <img id="facebookLink" class="icon" src="../images/facebook-app-icon.png" alt="Facebook Icon">
-                <img id="linkedinLink" class="icon" src="../images/linkedin-app-icon.png" alt="LinkedIn Icon">
-                <img id="upworkLink" class="icon" src="../images/upwork-icon.png" alt="Upwork Logo">
-            </div>
-            <p>Copyright ©2022 All rights reserved to Gen Graphic</p>
-        </footer>
-    </main>
+        <p>Copyright ©2022 All rights reserved to Gen Graphic</p>
+    </footer>
 </body>
-<script src="js/contact.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="js/contact.js"></script>
 </html>

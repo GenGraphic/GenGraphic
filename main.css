@@ -26,40 +26,16 @@
         color: white;
         font-family: 'Courier New', Courier, monospace;
     }
-    #header {
-        display: grid;
-        grid-auto-flow: column;
-    }
     .links {
         color: white;
         text-decoration: none;
         margin: 20px;
         font-size: 1.5rem;
     }
-    #logoDiv {
-        width: 100%;
-        margin: 30px;
-        display: table;
-        border-collapse: collapse;
-    }
-    #pageName {
-        color: white;
-        text-decoration: none;
-        font-size: 2rem;
-        display: table-cell;
-        vertical-align: middle;
-        width: 99%;
-    }
-    #menuIconDiv {
-        display: table;
-        text-align: right;
-        margin: 60px;
-    }
     #menu {
        display: none;
-       transition: 0.2s;
+       transition: 0.3s;
     }
-    
     #logoTitle {
         color: white;
         font-size: 1.5em;
@@ -69,10 +45,7 @@
     #menuIcon:hover {
         cursor: pointer;
     }
-    #title {
-        font-weight: 100;
-    }
-    #slogan {
+    #title, #slogan {
         font-weight: 100;
     }
     #contactBtn {

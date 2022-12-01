@@ -3,6 +3,21 @@ var packageToCustomize = document.getElementById('package_to_customize');
 const menuIcon = document.getElementById('menuIcon');
 const menuOptions = document.getElementById('menu');
 var menuToggle = false;
+//const obj for the footer media links
+const facebookLink = document.getElementById('facebookLink');
+const linkedin = document.getElementById('linkedinLink');
+const upworkLink = document.getElementById('upworkLink');
+
+//making buttons for footer
+facebookLink.addEventListener('click', () => {
+    window.open('https://www.facebook.com/profile.php?id=100087527200353', '_blank').focus();
+});
+linkedin.addEventListener('click', () => {
+    window.open('https://www.linkedin.com/in/gen-graphic-b10152256/', '_blank').focus();
+});
+upworkLink.addEventListener('click', () => {
+    window.open('https://www.upwork.com/freelancers/~017e3bb98e715de75a', '_blank').focus();
+});
 
 //menu show and hide
 //making button for menu
