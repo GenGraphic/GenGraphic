@@ -1,3 +1,6 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
 body {
     background-image: url("../../images/PriceBkg.jpg");
     background-size: cover;
@@ -9,8 +12,7 @@ body {
     color: white;
     text-decoration: none;
     margin: 20px;
-    font-size: 1.5em;
-    text-align: center;
+    font-size: 1.5rem;
 }
 #header {
     height: 200px;
@@ -29,7 +31,7 @@ body {
 }
 #logoTitle {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-decoration: none;
     cursor: pointer;
 }
@@ -117,8 +119,5 @@ footer p {
     }
     #menuBtn {
         z-index: 1;
-        position: fixed;
-        top: 50px;
-        right: 50px;
     }
 }

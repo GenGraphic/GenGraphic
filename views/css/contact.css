@@ -38,9 +38,6 @@ body {
     #title, #slogan {
         font-weight: 100;
     }
-    #slogan {
-        font-weight: 100;
-    }
     #welcomePart {
         background-image: url("../../images/welcomeScrenn.jpg");
         background-color: rgba(165,82,197,255);
@@ -123,9 +120,6 @@ body {
         }
         #menuBtn {
             z-index: 1;
-            position: fixed;
-            top: 50px;
-            right: 50px;
         }
     }
     

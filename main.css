@@ -16,6 +16,9 @@
         width: 70px;
         height: 70px;
     }
+    #closeIcon {
+        display: none;
+    }
     #welcomePart {
         background-image: url("images/welcomeScrenn.jpg");
         background-color: rgba(165,82,197,255);
@@ -172,8 +175,5 @@
         }
         #menuBtn {
             z-index: 1;
-            position: fixed;
-            top: 50px;
-            right: 50px;
         }
     }

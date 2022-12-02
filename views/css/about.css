@@ -4,15 +4,6 @@
 }
 body {
     background-color: rgba(75, 55, 154, 255);
-    margin: 0;
-}
-main {
-    width: 90%;
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
 }
 
 /*Aici incepe styleingul pentru prima parte a paginii 
@@ -25,93 +16,41 @@ main {
         width: 70px;
         height: 70px;
     }
-    #welcomePart {
-        background-image: url("../../images/welcomeScrenn.jpg");
-        background-color: rgba(165,82,197,255);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 500px;
-        color: white;
-        font-family: 'Courier New', Courier, monospace;
-        width: 100%;
-    }
-    #header {
-        display: grid;
-        grid-auto-flow: column;
-    }
     .links {
         color: white;
         text-decoration: none;
         margin: 20px;
         font-size: 1.5rem;
     }
-    #logoDiv {
-        width: 100%;
-        margin: 30px;
-        display: table;
-        border-collapse: collapse;
-    }
-    #pageName {
+    #logoTitle {
         color: white;
+        font-size: 1.5em;
         text-decoration: none;
-        font-size: 2rem;
-        display: table-cell;
-        vertical-align: middle;
-        width: 99%;
+        cursor: pointer;
     }
-    #menuIconDiv {
-        display: table;
-        text-align: right;
-        margin: 60px;
-    }
-    .sticky {
-        width: 90%;
-        height: 100px;
-        position: fixed;
-        top: 0;
-        background-color: rgba(50,38,162,255);
-        opacity: 0.9;
-    }
-    #menuOptions {
-        opacity: 0;
-        float: left;
-        width: 90%;
-    }
-    
-    #menuIcon {
-        vertical-align: middle;
+    #menu {
+        display: none;
     }
     #menuIcon:hover {
         cursor: pointer;
     }
-    #title {
-        font-size: 5rem;
-        font-weight: 100;
-        margin-top: 0;
+    #welcomePart {
+        background-image: url("../../images/welcomeScrenn.jpg");
+        background-color: rgba(165,82,197,255);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        height: 500px;
     }
-    #slogan {
+    #title, #slogan {
         font-weight: 100;
-        margin-bottom: 0;
-    }
-    #titleCont {
-        padding-top: 5rem;
-        text-align: center;
     }
     #contactBtn {
         color: white;
-        background-color: transparent;
-        width: 200px;
-        height: 50px;
-        border-radius: 50px;
-        border: 1px solid white;
-    }
-
-    /*aici pot sa mai adaug animatie pentru schimbarea culorii*/
-
-    #contactBtn:hover {
-        background-image: linear-gradient(to left, rgba(169,84,199,255), rgba(50,38,162,255));
-        border: none;
+        width: 150px;
+        height: 60px;
+        border-color: white;
     }
     /*Aici se termina styleingul pentru prima parte a paginii 
     unde se afla header-ul, si titlul */
@@ -120,88 +59,33 @@ main {
 /*Aici incepe styleingul pentru partea 2 a paginii*/
 
 #secondInfo{
-    overflow: hidden;
     background-image: url('../../images/secondInfoImage.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 400px;
+    height: 400px auto;
+    color: white;
 }
-#textArea2 {
-    float: right;
-    color: rgb(229, 229, 229);
+#textWhoUs p {
+    font-size: 1.2em;
 }
-#textArea2 h1 {
-    font-weight: 100;
-    font-family: 'Courier New', Courier, monospace;
-}
-#textArea2 p {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    line-height: 1.5em;
-    font-size: 18px;
-}
-.textAreas {
-    width: 45%;
-    float: left;
-    padding: 5%;
+#aboutDev, #aboutDesigner {
+    color: white;
+    font-size: 1.2em;
 }
 /*Aici se termina styleingul pentru partea 2 a paginii*/
 
 /*Aici incepe style pentru membrii echipei*/
 .images {
-    width: 90%;
-    height: auto;
     border-radius: 50%;
 }
-#ourTeam div {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+@media only screen and (max-width: 991px) {
+    .images {
+        height: auto;
+        width: 50%;
+    }
 }
-#titleDev {grid-area: title;}
-#imageDev {grid-area: image;}
-#textDev {
-    grid-area: description;
-    text-align: justify;
-    font-size: 18px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-#aboutDev {
-    display: grid;
-    column-gap: 10px;
-    grid-template-areas: 
-    'title title title title'
-    'image description description description';
-}
-#aboutDev h1 {
-    font-weight: 100;
-}
-
-#titleDesigner {grid-area: titleDes;}
-#imageDesigner {grid-area: imageDes;}
-#textDesigner {
-    grid-area: descriptionDes;
-    font-size: 18px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-#aboutDesigner {
-    display: grid;
-    column-gap: 10px;
-    grid-template-areas: 
-    'titleDes titleDes titleDes titleDes'
-    'descriptionDes descriptionDes descriptionDes imageDes';
-}
-#aboutDesigner h1 {
-    font-weight: 100;
-}
-
-/*Aici se incheie style pentru membrii echipei*/
-
 /*Footer start*/
 footer {
     background-color: rgb(34,34,34,255);
@@ -222,76 +106,18 @@ footer p {
 /*Footer finish*/
 
 /*make it resopnsive*/
-@media only screen and (max-width: 895px) {
-    #menuOptions {
-        position:absolute;
-        width: 30%;
-        right: 5%;
-        display: grid;
-        top: 100px;
+@media only screen and (max-width: 1200px) {
+    #menus {
+        background-color: rgba(255,165,76,255);
+        height: 100vh;
+        width: 210px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1.5em;
+        z-index: 1;
     }
-    #menuOptions a {
-        float: none;
-        margin: 0;
-        padding: 10px;
-        text-align: center;
-        border: 1px solid white;
-        border-radius: 20px;
-        font-size: 1.5rem;
+    #menuBtn {
+        z-index: 1;
     }
-}
-@media only screen and (max-width: 1300px){
-    #aboutDev {
-        justify-items: center;
-        grid-template-areas: 
-        'title'
-        'description'
-        'image';
-    }
-    #aboutDev img {
-        width: auto;
-        height: 200px;
-    }
-    #ourTeam div {
-        width: 100%;
-        margin: 0;
-    }
-    #ourTeam div p {
-        padding: 20px;
-        font-weight: 300;
-    }
-    #aboutDesigner img {
-        width: auto;
-        height: 200px;
-    }
-    #aboutDesigner {
-        justify-items: center;
-        grid-template-areas: 
-        'titleDes'
-        'descriptionDes'
-        'imageDes';
-    }
-}
-@media only screen and (max-width: 590px) {
-    #title {
-        font-size: 3rem;
-    }
-}
-@media only screen and (max-width: 495px) {
-    #pageName {
-        font-size: 1rem;
-        transform: none;
-        margin: auto;
-        top: 20%;
-    }
-    .logo {
-        width: 50px;
-        height: 50px;
-    }
-    #textArea2 {
-        width: 100%;
-        float: none;
-        padding: 5px;
-    }
-
 }

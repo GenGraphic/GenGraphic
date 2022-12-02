@@ -6,75 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
 </head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet"/>
 <link rel="stylesheet" href="css/about.css">
 <body>
-    <main>
-        <div id="welcomePart">
-            <div id="header">
-                <div id="logoDiv">
-                    <img class="logo" src="../images/Simplelogo.png" alt="Logo">
-                    <a class="links" id="pageName" href="../index.html">GEN Graphic</a>
-                </div>
-                <div id="menuIconDiv">
-                    <div id="menuOptions">
-                        <a class="links" href="../index.html">Home</a>
-                        <a class="links" href="contact.html">Contact</a>
-                        <a class="links" href="price.html">Our Prices</a>
+    <div id="header" class="container">
+        <div class="row m-3">
+            <div class="col my-auto">
+                <div class="row">
+                    <div class="col-auto my-auto">
+                        <img id="logo" class="logo" src="../images/Simplelogo.png" alt="Logo">
                     </div>
-                    
-                    <img id="menuIcon" class="icon" src="../images/menuIcon.png" alt="Menu Icon"> 
+                    <div class="col my-auto">
+                        <a id="logoTitle" href="../index.html">Gen Graphic</a>
+                    </div>
                 </div>
             </div>
-            <div id="titleCont">
-                <h2 id="slogan">WEB AT HIGH STANDARDS</h2>
-                <h1 id="title">GEN GRAPHIC</h1>
-                <button id="contactBtn">Contact us</button>
-            </div>
-        </div>
-        <div id="secondInfo">
-            <div class="textAreas" id="textArea2">
-                <h1>Who are <strong>we</strong>?</h1>
-                <p>We represent an agency whose values
-                    revolve around attention to details, superior quality 
-                    and passion for perfection,
-                    setting new standards for websites production. Behind all these
-                    success are working hours and desire to satisfy
-                    our customers. This way we develop
-                    constantly new ideas, and besides all this
-                    we always take into account the wishes of the client</p>
-            </div>
-        </div>
-        <div id="ourTeam">
-            <div id="aboutDev">
-                <h1 id="titleDev">Web developer</h1>
-                <img id="imageDev" class="images" src="../images/DeleuCostel.jpeg" alt="Man working on computer">
-                <p id="textDev">From the beginning of 2021 until now, 
-                    I've put piece next to the piece in this puzzle, 
-                    and at this moment I am the founder of the agency "GEN GRAPHIC", the ambassador of the Website "GEN GRAPHIC" and its developer. Our agency
-                    successfully represents a complex and complete line of products. I've always liked to break out patterns and have fun and to improve my professional skills, that's how I've got now to develop a team and have my own agency.</p>  
+            <div class="col" id="menu">
+                <div id="menus" class="row">
+                    <div class="col-xl row">
+                        <a class="links align-self-center" href="../index.html">Home</a>
+                    </div>
+                    <div class="col-xl row align-self-center">
+                        <a class="links" href="about.html">About us</a>
+                    </div>
+                    <div class="col-xl row align-self-center">
+                        <a class="links" href="price.html">Prices</a>
+                    </div>
+                </div>
             </div>
 
-            <div id="aboutDesigner">
-                <h1 id="titleDesigner">Web Designer</h1>
-                <img id="imageDesigner" class="images" src="../images/AndreiBalan.jpg" alt="Man design on paper">
-                <p id ="textDesigner" >He finished the course in the first part of 2022
-                    "UI/UX Design-CareerFoundry", and in this
-                    moment is the designer of the agency "Gen
-                    Graph".
-                    Creative, big-picture thinker, attentive to details,
-                    Andrei always chooses the most originals
-                    designs for our clients.</p>  
-            </div>    
-        </div>
-        <footer>
-            <div id="socialMedia">
-                <img id="facebookLink" class="icon" src="../images/facebook-app-icon.png" alt="Facebook Icon">
-                <img id="linkedinLink" class="icon" src="../images/linkedin-app-icon.png" alt="LinkedIn Icon">
-                <img id="upworkLink" class="icon" src="../images/upwork-icon.png" alt="Upwork Logo">
+            <div id="menuBtn" class="col-1 my-auto">
+                <img id="menuIcon" class="icon" src="../images/menuIcon.png" alt="Menu Icon">
             </div>
-            <p>Copyright ©2022 All rights reserved to Gen Graphic</p>
-        </footer>
-    </main>
+        </div>
+    </div>
+
+    <div class="container" id="welcomePart">
+        <div class="row text-center h-100" id="titleCont">
+            <div class="col-12 mx-auto my-auto">
+                <h2 id="slogan">WEB AT HIGH STANDARDS</h2>
+                <h1 id="title">GEN GRAPHIC</h1>
+                <button id="contactBtn" type="button" class="btn btn-outline-primary">Contact us</button>
+            </div>  
+        </div>
+    </div>
+
+    <div id="secondInfo" class="container">
+        <div class="row h-100" id="textArea2">
+            <div class="col-0 col-lg-6"></div>
+            <div class="col align-self-center text-center" id="textWhoUs">
+                <h1>Who are <strong>we</strong>?</h1>
+                <p>We represent an agency whose values
+                revolve around attention to details, superior quality 
+                and passion for perfection,
+                setting new standards for websites production. Behind all these
+                success are working hours and desire to satisfy
+                our customers. This way we develop
+                constantly new ideas, and besides all this
+                we always take into account the wishes of the client</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="ourTeam" class="container mt-5 mb-5">
+        <div class="row" id="aboutDev">
+            <div class="col-12 col-xs-12 text-center">
+                <h1 id="titleDev">Web developer</h1>                
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-xs-12 col-lg-2 align-self-center text-center">
+                    <img class="img-fluid images" src="../images/DeleuCostel.jpeg" alt="The Founder">
+                </div>
+                <div class="col col-xs-12 col-lg-10 text-center align-self-center">
+                    <p id="textDev">From the beginning of 2021 until now, 
+                        I've put piece next to the piece in this puzzle, 
+                        and at this moment I am the founder of the agency "GEN GRAPHIC", 
+                        the ambassador of the Website "GEN GRAPHIC" and its developer. 
+                        Our agency successfully represents a complex and complete line of products. 
+                        I've always liked to break out patterns and have fun and to improve my professional skills, 
+                        that's how I've got now to develop a team and have my own agency.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="aboutDesigner">
+            <div class="col-12 col-xs-12 text-center">
+                <h1 id="titleDesigner">Web Designer</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-lg-2 order-lg-1 text-center align-self-center">
+                    <img class="img-fluid images" src="../images/AndreiBalan.jpg" alt="Man design on paper">
+                </div>
+                <div class="col col-xs-12 col-lg-10 text-center align-self-center">
+                    <p id ="textDesigner" >He finished the course in the first part of 2022
+                        "UI/UX Design-CareerFoundry", and in this
+                        moment is the designer of the agency "Gen
+                        Graph". Creative, big-picture thinker, attentive to details,
+                        Andrei always chooses the most originals
+                        designs for our clients.
+                    </p>  
+                </div>
+            </div>
+        </div>    
+    </div>
+    <footer>
+        <div id="socialMedia">
+            <img id="facebookLink" class="icon" src="../images/facebook-app-icon.png" alt="Facebook Icon">
+            <img id="linkedinLink" class="icon" src="../images/linkedin-app-icon.png" alt="LinkedIn Icon">
+            <img id="upworkLink" class="icon" src="../images/upwork-icon.png" alt="Upwork Logo">
+        </div>
+        <p>Copyright ©2022 All rights reserved to Gen Graphic</p>
+    </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 <script src="js/about.js"></script>
 </html>

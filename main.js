@@ -4,6 +4,7 @@ const linkedin = document.getElementById('linkedinLink');
 const upworkLink = document.getElementById('upworkLink');
 //const for the menu
 const menuIcon = document.getElementById('menuIcon');
+const closeIcon = document.getElementById('closeIcon');
 const menuOptions = document.getElementById('menu');
 var menuToggle = false;
 
@@ -23,14 +24,20 @@ menuIcon.addEventListener('click', () => {
     if (!menuToggle)
     {
         menuOptions.style.display = 'block';
-        menuIcon.src = 'images/exit.png';
+        menuIcon.style.display = 'none';
+        closeIcon.style.display = 'block';
         menuToggle = true;
-    }else if(menuToggle) {
-        menuOptions.style.display = 'none';
-        menuIcon.src = 'images/menuIcon.png';
-        menuToggle = false;
     }
 });
+closeIcon.addEventListener('click', () => {
+    if (menuToggle)
+    {
+        menuOptions.style.display = 'none';
+        menuIcon.style.display = 'block';
+        closeIcon.style.display = 'none';
+        menuToggle = false;
+    }
+})
 
 //button for contact us
 document.getElementById('contactBtn').addEventListener('click', () => {
