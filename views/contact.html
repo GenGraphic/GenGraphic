@@ -11,33 +11,47 @@
 <link rel="stylesheet" href="css/contact.css">
 <body>
     <div id="header" class="container">
-        <div class="row m-3">
-            <div class="col my-auto">
-                <div class="row">
-                    <div class="col-auto my-auto">
-                        <img id="logo" class="logo" src="../images/Simplelogo.png" alt="Logo">
-                    </div>
-                    <div class="col my-auto">
-                        <a id="logoTitle" href="../index.html">Gen Graphic</a>
-                    </div>
-                </div>
+        <div class="row p-3 bg-dark d-none d-lg-flex">
+            <div class="col">
+                <img class="logo" src="../images/Simplelogo.png" alt="Logo">
             </div>
-            <div class="col" id="menu">
-                <div id="menus" class="row">
-                    <div class="col-xl row">
-                        <a class="links align-self-center" href="../index.html">Home</a>
+            <div class="col my-auto text-end">
+                <a class="links align-middle btn disabled" href="#">Contact</a>
+            </div>
+            <div class="col my-auto text-end">
+                <a class="links align-middle" href="../index.html">Home</a>
+            </div>
+            <div class="col my-auto text-end">
+                <a class="links" href="about.html">About us</a>
+            </div>
+            <div class="col my-auto text-end">
+                <a class="links" href="price.html">Prices</a>
+            </div>
+        </div>
+
+        <div class="row bg-dark d-lg-none">
+            <div class="col">
+                <img class="logo" src="../images/Simplelogo.png" alt="Logo">
+            </div>
+            <div class="col my-auto text-end">
+                <img id="menuIcon" class="icon" src="../images/menuIcon.png" alt="Menu Icon">
+            </div>
+
+            <div class="col-12" id="responsiveMenu">
+                <div class="row">
+                    <div class="col-12 col-md-3 align-self-end my-auto text-end">
+                        <a class="links align-middle btn disabled" href="#">Contact</a>
                     </div>
-                    <div class="col-xl row align-self-center">
+                    <div class="col-12 col-md-3 align-self-end my-auto text-end">
+                        <a class="links align-middle" href="../index.html">Home</a>
+                    </div>
+                    <div class="col-12 col-md-3 my-auto text-end">
                         <a class="links" href="about.html">About us</a>
                     </div>
-                    <div class="col-xl row align-self-center">
+                    <div class="col-12 col-md-3 my-auto text-end">
                         <a class="links" href="price.html">Prices</a>
                     </div>
                 </div>
-            </div>
-
-            <div id="menuBtn" class="col-1 my-auto">
-                <img id="menuIcon" class="icon" src="../images/menuIcon.png" alt="Menu Icon">
             </div>
         </div>
     </div>

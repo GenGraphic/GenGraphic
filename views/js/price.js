@@ -1,7 +1,7 @@
 var packageToCustomize = document.getElementById('package_to_customize');
 //const for the menu
 const menuIcon = document.getElementById('menuIcon');
-const menuOptions = document.getElementById('menu');
+const menuOptions = document.getElementById('responsiveMenu');
 var menuToggle = false;
 //const obj for the footer media links
 const facebookLink = document.getElementById('facebookLink');
@@ -24,12 +24,10 @@ upworkLink.addEventListener('click', () => {
 menuIcon.addEventListener('click', () => { 
     if (!menuToggle)
     {
-        menuOptions.style.display = 'block';
-        menuIcon.src = '../images/exit.png';
+        menuOptions.style.height = 'auto';
         menuToggle = true;
     }else if(menuToggle) {
-        menuOptions.style.display = 'none';
-        menuIcon.src = '../images/menuIcon.png';
+        menuOptions.style.height = '0';
         menuToggle = false;
     }
 });
@@ -112,3 +110,7 @@ function RemoveAllFeature() {
     }
 }
 
+//function for Order Btn
+function Order() {
+    window.location.href = 'contact.html';
+};

@@ -16,6 +16,13 @@ body {
         width: 70px;
         height: 70px;
     }
+    #header {
+        overflow-y: hidden;
+    }
+    #responsiveMenu {
+        height: 0;
+        transition: 0.5s;
+    }
     .links {
         color: white;
         text-decoration: none;
@@ -27,9 +34,6 @@ body {
         font-size: 1.5em;
         text-decoration: none;
         cursor: pointer;
-    }
-    #menu {
-        display: none;
     }
     #menuIcon:hover {
         cursor: pointer;
@@ -57,7 +61,6 @@ body {
 
     
 /*Aici incepe styleingul pentru partea 2 a paginii*/
-
 #secondInfo{
     background-image: url('../../images/secondInfoImage.jpg');
     background-position: center;
@@ -104,20 +107,3 @@ footer p {
     margin-right: auto;
 }
 /*Footer finish*/
-
-/*make it resopnsive*/
-@media only screen and (max-width: 1200px) {
-    #menus {
-        background-color: rgba(255,165,76,255);
-        height: 100vh;
-        width: 210px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 1.5em;
-        z-index: 1;
-    }
-    #menuBtn {
-        z-index: 1;
-    }
-}
