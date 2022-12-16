@@ -1,0 +1,95 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    background-image: url("../../images/PriceBkg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+}
+#header {
+    overflow-y: hidden;
+}
+#responsiveMenu {
+    height: 0;
+    transition: 0.5s;
+}
+.logo {
+    width: 70px;
+    height: 70px;
+}
+#logoTitle {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.page-title {
+    text-align: center;
+    color: white;
+}
+#welcomePart {
+    background-image: url('../../images/portofolioBkg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    color: white;
+}
+
+/*Portofolio Content*/
+#portofolioContent {
+    color: white;
+    background-image: linear-gradient(rgba(121,121,121,1), rgba(121,121,121,0));
+}
+.img {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border: 2px solid rgba(0,123,255,255);
+}
+.img1 {
+    height: 240px;
+    width: 495px;
+    z-index: 3;
+}
+.img2 {
+    z-index: 2;
+    bottom: 100px;
+    width: 490px;
+    height: 235px;
+}
+.img3 {
+    z-index: 1;
+    bottom: 200px;
+    width: 485px;
+    height: 230px;
+}
+
+/*Footer*/
+footer {
+    background-color: rgb(34,34,34,255);
+}
+footer img {
+    margin: 10px;
+}
+footer p {
+    text-align: center;
+    color: rgb(229, 229, 229);
+    margin: 0;
+}
+#socialMedia {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
