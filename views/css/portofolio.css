@@ -16,6 +16,7 @@ body {
 .icon {
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 #header {
     overflow-y: hidden;
@@ -62,6 +63,7 @@ body {
     height: 240px;
     width: 495px;
     z-index: 3;
+    transition: 0.5s;
 }
 .img2 {
     z-index: 2;
