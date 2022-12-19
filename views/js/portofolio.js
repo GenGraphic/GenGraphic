@@ -120,3 +120,15 @@ arrow_up_weBrand.addEventListener('click', () => {
 
     list_fotos[0].parentNode.appendChild(firstElement);
 });
+
+//buttons from texts to contact us
+
+document.body.onclick = function(e) {
+    var clickedBtn = window.event ? event.srcElement : e.target;
+    while (clickedBtn.className
+        && (' '+ clickedBtn.className +' ').indexOf('contactBtn') != -1) {
+            location.href = 'contact.html';
+            return;
+        }
+        clickedBtn = clickedBtn.parentNode;
+}
